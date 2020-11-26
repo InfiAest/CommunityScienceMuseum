@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Community Science Museum Contact Page</title>
+        <meta name="description" content="Get in touch with us at the Community Science Museum so we can answer any questions you may have.">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header>
+            <a href="index.html"><img class="logo" src="images/CSM Logo 500px.png" alt="Community Science Museum logo which acts as the home button"></a>
+            <label class="hamburger-label" for="hamburger-menu"><i class="fas fa-bars"></i></label>
+            <input type="checkbox" id="hamburger-menu">
+            <label class="search-label" for="search-menu"><i class="fas fa-search"></i></label>
+            <input type="checkbox" id="search-menu">
+            <nav>
+                <ul>
+                    <li><a href="exhibition-spaces.html">Exhibition Spaces</a></li>
+                    <li><a href="explore.html">Explore</a></li>
+                    <li><a href="events.html">Events & Exhibitions</a></li>
+                    <li><a href="get-involved.html">Get Involved</a></li>
+                    <li><a href="visit-us.html">Visit Us</a></li>
+                    <li><a class="active" href="contact-us.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="search-box">
+                <form class="searchbox" action="action_page.php">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                    <input type="text" placeholder="Search.." name="Search">
+                </form>
+            </section>
+                <h1>Contact Us</h1>
+            <form class="contact-form" action="form-success.php" method="POST">
+                <fieldset>
+                        <legend>Select from the list below what you would like to contact us about:</legend>
+                                <input type="radio" id="donations" name="contact" value="donations">
+                                <label for="donations">Donations</label>
+                                <input type="radio" id="volunteering" name="contact" value="volunteering">
+                                <label for="volunteering">Volunteering</label>
+                                <input type="radio" id="internships" name="contact" value="internships">
+                                <label for="internships">Internships</label>
+                                <input type="radio" id="other" name="contact" value="other">
+                                <label for="other">Something Else</label>
+                        <legend>Want to make a donation?</legend>
+                    <div class="donation-form">
+                            <label for="name">Your Full Name</label>
+                            <input type="text" name="name" class="form__input">
+                            <label for="email">Your Email Address</label>
+                            <input type="email" name="email" class="form__input" required>
+                            <label for="Phone">Your Phone Number</label>
+                            <input type="tel" name="Phone" class="form__input" required>  
+                            <label for="message">Please write a description of what you want to donate and
+                                we will contact you as soon as possible...
+                            </label>
+                            <textarea name="message"></textarea>
+                            <a href="booking-confirmation.html" class="button">Send Message</a>
+                    </div>
+                        <legend>Want to Volunteer?</legend>
+                    <div class="donation-form">
+                            <label for="name">Your Full Name</label>
+                            <input type="text" name="name" class="form__input">
+                            <label for="email">Your Email Address</label>
+                            <input type="email" name="email" class="form__input" required>
+                            <label for="Phone">Your Phone Number</label>
+                            <input type="tel" name="Phone" class="form__input" required>  
+                            <label for="message">Please write a decsription of yourself and we will contact you as soon as we can…
+                                (include your age and interests)
+                            </label>
+                            <textarea name="message"></textarea>
+                            <a href="booking-confirmation.html" class="button">Send Message</a>
+                    </div>
+                        <legend>Want an internship?</legend>
+                    <div class="donation-form">
+                            <label for="name">Your Full Name</label>
+                            <input type="text" name="name" class="form__input">
+                            <label for="email">Your Email Address</label>
+                            <input type="email" name="email" class="form__input" required>
+                            <label for="Phone">Your Phone Number</label>
+                            <input type="tel" name="Phone" class="form__input" required>  
+                            <label for="message">Please write a decsription of yourself and we will contact you as soon as we can…
+                                (include your age and interests)
+                            </label>
+                            <textarea name="message"></textarea>
+                            <label for="cv">Please attatch your CV and Cover letter</label>
+                            <input type="file" id="cv" name="cv">
+                            <a href="#" class="button">Send Message</a>
+                    </div>
+                </fieldset>
+            </form>
+                <div>
+                    <h2>Something Else?</h2>
+                    <p>Give us a call during our opening hours to chat to one of our wonderful members of staff</p>
+                    <p>+47 923 45 678</p>
+                    <p>Alternatively, come down and visit us and chat with us in person</p>
+                    <p>Haakon Sheteligs plass 10 
+                        5007 
+                        Bergen</p>
+                    <a href="visit-us.html" class="button">(See map on the Visit Us Page)</a>
+                </div>
+        </main>
+        <footer>
+            <p class="footer-title">Information:</p>
+                <a href="explore.html"><p>Explore</p></a>
+                <a href="exhibition-spaces.html"><p>Exhibition Spaces</p></a>
+                <a href="events.html"><p>Events</p></a>
+            <p class="footer-title">Contact:</p>
+                <a href="contact-us.html"><p>Telephone</p></a>
+                <a href="contact-us.html"><p>Opening Hours</p></a>
+                <a href="contact-us.html"><p>Location</p></a>
+            <p class="footer-title">Legal:</p>
+                <a href="#"><p>Licensing</p></a>
+                <a href="#"><p>Business Contacts</p></a>
+                <a href="#"><p>Rights</p></a>
+            <div>
+                &copy; Community Science Museum. All rights reserved.
+            </div>
+        </footer>
+    </body>
+</html>

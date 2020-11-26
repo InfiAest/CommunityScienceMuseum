@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Community Science Museum Booking Page</title>
+        <meta name="description" content="Book an event at the Community Science Museum.">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header>
+            <a href="index.html"><img class="logo" src="images/CSM Logo 500px.png" alt="Community Science Museum logo which acts as the home button"></a>
+            <label class="hamburger-label" for="hamburger-menu"><i class="fas fa-bars"></i></label>
+            <input type="checkbox" id="hamburger-menu">
+            <label class="search-label" for="search-menu"><i class="fas fa-search"></i></label>
+            <input type="checkbox" id="search-menu">
+            <nav>
+                <ul>
+                    <li><a href="exhibition-spaces.html">Exhibition Spaces</a></li>
+                    <li><a href="explore.html">Explore</a></li>
+                    <li><a href="events.html">Events & Exhibitions</a></li>
+                    <li><a href="get-involved.html">Get Involved</a></li>
+                    <li><a href="visit-us.html">Visit Us</a></li>
+                    <li><a href="contact-us.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="search-box">
+                <form class="searchbox" action="action_page.php">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                    <input type="text" placeholder="Search.." name="Search">
+                </form>
+            </section>
+                <h1>Booking Form</h1>
+            <form>
+                <fieldset>
+                        <label for="name">Your Full Name</label>
+                        <input type="text" name="name" class="form__input">
+                        <label for="email">Your Email Address</label>
+                        <input type="email" name="email" class="form__input" required>
+                        <label for="Phone">Your Phone Number</label>
+                        <input type="tel" name="Phone" class="form__input" required>  
+                        <label for="tickets">Select number of tickets you want...</label>
+                                <select name="tickets" class="form__input">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                    <option value="schoolclass">School Class</option>
+                                </select>
+                            <label for="message">Any notes if necessary...</label>
+                            <textarea name="message"></textarea>
+                            <label for="event">Select which event you want to book for...</label>
+                                <select name="events" class="form__input">
+                                    <option value="event-1">Visiting Professor of Aeronautics</option>
+                                    <option value="event-2">Night in the Museum</option>
+                                    <option value="event-3">Energetica Exhibition on Loan</option>
+                                </select>
+                                <label for="day">Select a date:</label>
+                                <input type="date" id="day" name="day">
+                            <label for="time">Select Time</label>
+                                <select name="time" class="form__input">
+                                    <option value="10">10:00</option>
+                                    <option value="12">12:00</option>
+                                    <option value="14">14:00</option>
+                                    <option value="16">16:00</option>
+                                </select>
+                                <a href="booking-confirmation.html" class="button">Book tickets</a>
+                </fieldset>
+            </form>
+        </main>
+        <footer>
+            <p class="footer-title">Information:</p>
+                <a href="explore.html"><p>Explore</p></a>
+                <a href="exhibition-spaces.html"><p>Exhibition Spaces</p></a>
+                <a href="events.html"><p>Events</p></a>
+            <p class="footer-title">Contact:</p>
+                <a href="contact-us.html"><p>Telephone</p></a>
+                <a href="contact-us.html"><p>Opening Hours</p></a>
+                <a href="contact-us.html"><p>Location</p></a>
+            <p class="footer-title">Legal:</p>
+                <a href="#"><p>Licensing</p></a>
+                <a href="#"><p>Business Contacts</p></a>
+                <a href="#"><p>Rights</p></a>
+            <div>
+                &copy; Community Science Museum. All rights reserved.
+            </div>
+        </footer>
+    </body>
+</html>
