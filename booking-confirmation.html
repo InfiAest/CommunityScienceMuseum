@@ -9,21 +9,21 @@
     </head>
     <body>
         <header>
-            <a href="index.html"><img class="logo" src="images/CSM Logo 500px.png" alt="Community Science Museum logo which acts as the home button"></a>
-            <label class="hamburger-label" for="hamburger-menu"><i class="fas fa-bars"></i></label>
-            <input type="checkbox" id="hamburger-menu">
-            <label class="search-label" for="search-menu"><i class="fas fa-search"></i></label>
-            <input type="checkbox" id="search-menu">
-            <nav>
-                <ul>
-                    <li><a href="exhibition-spaces.html">Exhibition Spaces</a></li>
-                    <li><a href="explore.html">Explore</a></li>
-                    <li><a href="events.html">Events & Exhibitions</a></li>
-                    <li><a href="get-involved.html">Get Involved</a></li>
-                    <li><a href="visit-us.html">Visit Us</a></li>
-                    <li><a href="contact-us.html">Contact Us</a></li>
-                </ul>
-            </nav>
+            <div class="nav-flex-container">
+                <label class="hamburger-label" for="hamburger-menu"><i class="fas fa-bars"></i></label>
+                <input type="checkbox" id="hamburger-menu">
+                <a href="index.html"><img class="logo" src="images/CSM Logo 500px.png" alt="Community Science Museum logo which acts as the home button"></a>
+                <nav>
+                    <ul>
+                        <li><a href="exhibition-spaces.html">Exhibition Spaces</a></li>
+                        <li><a href="explore.html">Explore</a></li>
+                        <li><a href="events.html">Events & Exhibitions</a></li>
+                        <li><a href="get-involved.html">Get Involved</a></li>
+                        <li><a href="visit-us.html">Visit Us</a></li>
+                        <li><a href="contact-us.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>    
         </header>
         <main>
             <section class="search-box">
@@ -42,20 +42,29 @@
                 <div class="booking-confirmation-img"></div>
         </main>
         <footer>
-            <p class="footer-title">Information:</p>
-                <a href="explore.html"><p>Explore</p></a>
-                <a href="exhibition-spaces.html"><p>Exhibition Spaces</p></a>
-                <a href="events.html"><p>Events</p></a>
-            <p class="footer-title">Contact:</p>
-                <a href="contact-us.html"><p>Telephone</p></a>
-                <a href="contact-us.html"><p>Opening Hours</p></a>
-                <a href="contact-us.html"><p>Location</p></a>
-            <p class="footer-title">Legal:</p>
-                <a href="#"><p>Licensing</p></a>
-                <a href="#"><p>Business Contacts</p></a>
-                <a href="#"><p>Rights</p></a>
-            <div>
-                &copy; Community Science Museum. All rights reserved.
+            <div class="footer-flex-container">
+                <div class="footer-section">
+                    <h3>Information:</h3>
+                        <a href="explore.html"><p>Explore</p></a>
+                        <a href="exhibition-spaces.html"><p>Exhibition Spaces</p></a>
+                        <a href="events.html"><p>Events</p></a>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact:</h3>
+                        <a href="contact-us.html"><p>Telephone</p></a>
+                        <a href="contact-us.html"><p>Opening Hours</p></a>
+                        <a href="contact-us.html"><p>Location</p></a>
+                </div>
+                <div class="footer-section">
+                    <h3>Legal:</h3>
+                        <a href="#"><p>Licensing</p></a>
+                        <a href="#"><p>Business Contacts</p></a>
+                        <a href="#"><p>Rights</p></a>
+                </div>
+                <div class="footer-section footer-logo">
+                    <a href="index.html"><img class="logo" src="images/CSM Logo 500px.png" alt="Community Science Museum logo which acts as the home button"></a>
+                    &copy; Community Science Museum. All rights reserved.
+                </div>
             </div>
         </footer>
     </body>

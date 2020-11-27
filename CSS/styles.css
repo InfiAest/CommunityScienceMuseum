@@ -1,0 +1,160 @@
+/*
+HEADING
+font-family: tachyon,sans-serif;
+font-weight: 400;
+font-style: normal;
+
+Sub-Heading
+font-family: rift,sans-serif;
+font-weight: 700;
+font-style: italic;
+
+Body
+font-family: sys-tt,sans-serif;
+font-weight: 400;
+font-style: normal;
+*/
+
+/* General Styles
+---------------*/
+h1 {
+    font-family: tachyon,sans-serif;
+    font-size: 2.5em;
+    color: #000000;
+}
+h2 {
+    font-family: rift,sans-serif;
+    font-size: 2.75em;
+    color: #000000;
+}
+h3 {
+    font-family: rift,sans-serif;
+    font-size: 1.65em;
+    color: #000000;
+}
+p {
+    font-family: sys-tt,sans-serif;
+    font-size: 1.2em;
+    color: #000000;
+}
+/* Navigation Bar
+---------------*/
+header {
+    background: #ffffff;
+    min-height: 100px;
+    position: sticky;
+    top: 0;
+    border-bottom: 4px solid #DBC350;
+}
+.logo {
+    width: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+nav a {
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    font-size: 1.2em;
+    font-family: tachyon,sans-serif;
+    text-align: center;
+    color: #000000;
+}
+nav a:hover {
+    color: #438F64;
+}
+nav ul {
+    list-style: none;
+    display: none;
+    flex-direction: column;
+}
+.hamburger-label {
+    display: block;
+    align-self: start;
+    color: #000000;
+    font-size: 1.5em;
+}
+#hamburger-menu, #search-menu, .searchbox {
+    display: none;
+}
+#hamburger-menu:checked ~ nav ul {
+    display: block;
+}
+
+
+.search-label {
+    float: right;
+    color: #000000;
+    padding: 10px;
+    font-size: 1.5em;
+    display: block;
+}
+
+#search-menu:checked ~ .searchbox {
+    display: block;
+}
+
+/* Footer styling
+-------------*/
+footer {
+    background: #438F64;
+    margin-top: 80px;
+    padding: 0;
+}
+footer a {
+    text-decoration: none;
+}
+.footer-flex-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-logo {
+    display: block;
+}
+
+/* Media Queries
+-------------*/
+/* Tablet and smaller screen sizes-------------*/
+@media(min-width: 641px){
+    
+}
+/*  SMALL Desktop screen sizes-------------*/
+@media(min-width: 801px){
+    main {
+        margin: 0 12%;
+      }
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        width: auto;
+        justify-content: space-between;
+    }
+    .nav-flex-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .hamburger-label {
+        display: none;
+    }
+    .footer-flex-container {
+        flex-direction: row;
+        justify-content: space-evenly;
+        text-align: left;
+        align-items: center;
+    }
+}
+/* LARGE Desktop screen sizes-------------*/
+@media only screen and (min-width: 1281px) {
+    .nav-flex-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+/* 
+-------------*/
+/* 
+-------------*/
