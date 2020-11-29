@@ -81,18 +81,58 @@ nav ul {
 #hamburger-menu:checked ~ nav ul {
     display: block;
 }
-
-
 .search-label {
-    float: right;
     color: #000000;
-    padding: 10px;
     font-size: 1.5em;
+    float: right;
+    margin-top: -25px;
+}
+#search-menu:checked ~ .searchbox {
     display: block;
 }
 
-#search-menu:checked ~ .searchbox {
-    display: block;
+/* Search bar and button styling
+-------------*/
+form.searchbox button {
+    float: right;
+    margin: 40px 0 10px 5px;
+    width: 20%;
+    padding: 10px;
+    background: #ffffff;
+    color: #DBC350;
+    border-radius: 12px;
+    font-size: 1.1em;
+    border: 4px solid #DBC350;
+    cursor: pointer;
+}
+form.searchbox input[type=text] {
+    float: right;
+    margin: 40px 0 10px 0;
+    padding: 10px;
+    font-size: 1em;
+    font-family: tachyon,sans-serif;
+    border: 4px solid #DBC350;
+    border-radius: 12px;
+    width: 70%;
+    background: #ffffff;
+}
+form.searchbox button:hover {
+    color: #000000;
+    background: #DBC350;
+}
+
+/* Main styling
+-------------*/
+main {
+    padding: 0 10px;
+}
+.desktop-search {
+    display: none;
+}
+/* Image styling
+-------------*/
+.image-styling {
+    border-radius: 24px;
 }
 
 /* Footer styling
@@ -123,8 +163,11 @@ footer a {
 /*  SMALL Desktop screen sizes-------------*/
 @media(min-width: 801px){
     main {
-        margin: 0 12%;
+        margin: 0 6%;
       }
+    .nav-flex-container {
+        margin: 0 2%;
+    }
     nav ul {
         display: flex;
         flex-direction: row;
@@ -137,8 +180,11 @@ footer a {
         justify-content: space-between;
         align-items: center;
     }
-    .hamburger-label {
+    .hamburger-label, .search-label {
         display: none;
+    }
+    .desktop-search {
+        display: block;
     }
     .footer-flex-container {
         flex-direction: row;
@@ -146,12 +192,30 @@ footer a {
         text-align: left;
         align-items: center;
     }
+    form.searchbox input[type=text] {
+        width: 62%;
+    }
+    form.searchbox button {
+        width: 20%;
+    }
 }
 /* LARGE Desktop screen sizes-------------*/
 @media only screen and (min-width: 1281px) {
+    main {
+        margin: 0 12%;
+      }
     .nav-flex-container {
         flex-direction: row;
         justify-content: space-between;
+    }
+    p {
+        font-size: 1.4em;
+    }
+    form.searchbox input[type=text] {
+        width: 72%;
+    }
+    form.searchbox button {
+        width: 15%;
     }
 }
 /* 

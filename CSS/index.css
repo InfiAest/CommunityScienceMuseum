@@ -1,0 +1,139 @@
+/* CSS GRID
+-------------*/
+body {
+    min-height: 100vh;
+    display: grid;
+    grid-template-areas: 
+    'header'
+    'main'
+    'footer'
+    ;
+}
+main {
+    display: grid;
+    column-gap: 20px;
+    grid-template-areas: 
+    'main-section-one'
+    'main-section-two'
+    'main-section-three'
+    'main-section-four'
+    'main-section-five'
+    'main-section-six'
+    'main-section-seven'
+    'main-section-eight'
+    'main-section-nine'
+    'main-section-ten'
+    ;
+}
+header{grid-area: header;}
+main{grid-area: main;}
+.main-section:nth-child(1){grid-area: main-section-one;}
+.main-section:nth-child(2){grid-area: main-section-two;}
+.main-section:nth-child(3){grid-area: main-section-three;}
+.main-section:nth-child(4){grid-area: main-section-four;}
+.main-section:nth-child(5){grid-area: main-section-five;}
+.main-section:nth-child(6){grid-area: main-section-six;}
+.main-section:nth-child(7){grid-area: main-section-seven;}
+.main-section:nth-child(8){grid-area: main-section-eight;}
+.main-section:nth-child(9){grid-area: main-section-nine;}
+.main-section:nth-child(10){grid-area: main-section-ten;}
+footer{grid-area: footer;}
+
+/* Image styling
+-------------*/
+.home-img-1, .home-img-2 {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+.home-img-3, .home-img-4 {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    margin: auto;
+}
+
+.img-container-1, .img-container-2, .img-container-3, .img-container-4 {
+    border-radius: 24px;
+    padding: 16px;
+    display: block;
+    margin: auto;
+}
+.img-container-1 {
+    background-color: #7BDBA5;
+}
+.img-container-2 {
+    background-color: #D98580;
+    margin-top: 20px;
+}
+.img-container-3 {
+    background-color: #DBC350;
+}
+.img-container-4 {
+    background-color: #7BDBA5;
+}
+
+/* Media Queries
+-------------*/
+/* Tablet and smaller screen sizes-------------*/
+@media(min-width: 641px){
+    main {
+        display: grid;
+        column-gap: 40px;
+        grid-template-columns: 2fr 1fr;
+        grid-template-areas: 
+        'main-section-two main-section-one'
+        'main-section-three zero'
+        'main-section-four main-section-six'
+        'main-section-seven main-section-seven'
+        'main-section-eight main-section-five'
+        'main-section-nine main-section-five'
+        'main-section-ten main-section-five'
+        ;
+    }
+    .img-container-2 {
+        margin-top: 0;
+    }
+}
+/*  SMALL Desktop screen sizes-------------*/
+@media(min-width: 801px){
+    main {
+        display: grid;
+        column-gap: 40px;
+        grid-template-columns: 2fr 1fr;
+        grid-template-areas: 
+        'main-section-two main-section-one'
+        'main-section-three zero'
+        'main-section-four main-section-six'
+        'main-section-four main-section-seven'
+        'main-section-eight main-section-five'
+        'main-section-nine main-section-nine'
+        'main-section-ten zero'
+        ;
+    }
+}
+/* LARGE Desktop screen sizes-------------*/
+@media only screen and (min-width: 1281px) {
+    main {
+        display: grid;
+        column-gap: 40px;
+        grid-template-columns: 2fr 1fr;
+        grid-template-areas: 
+        'main-section-two main-section-one'
+        'main-section-three zero'
+        'main-section-four main-section-six'
+        'main-section-four main-section-seven'
+        'main-section-eight main-section-five'
+        'main-section-nine main-section-five'
+        'main-section-ten main-section-five'
+        ;
+    }
+    .img-container-3 {
+        margin-top: 50px;
+    }
+}
+/* 
+-------------*/
+/* 
+-------------*/

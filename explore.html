@@ -12,6 +12,8 @@
             <div class="nav-flex-container">
                 <label class="hamburger-label" for="hamburger-menu"><i class="fas fa-bars"></i></label>
                 <input type="checkbox" id="hamburger-menu">
+                <label class="search-label" for="search-menu"><i class="fas fa-search"></i></label>
+                <input type="checkbox" id="search-menu">
                 <a href="index.html"><img class="logo" src="images/CSM Logo 500px.png" alt="Community Science Museum logo which acts as the home button"></a>
                 <nav>
                     <ul>
@@ -23,11 +25,15 @@
                         <li><a href="contact-us.html">Contact Us</a></li>
                     </ul>
                 </nav>
+                <form class="searchbox" action="action_page.php">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                    <input type="text" placeholder="Search.." name="Search">
+                </form>
             </div>    
         </header>
         <main>
-            <section class="search-box">
-                <form class="searchbox" action="action_page.php">
+            <section class="main-section">
+                <form class=" desktop-search searchbox" action="action_page.php">
                     <button type="submit"><i class="fa fa-search"></i></button>
                     <input type="text" placeholder="Search.." name="Search">
                 </form>
