@@ -1,0 +1,215 @@
+/* CSS GRID
+-------------*/
+body {
+    min-height: 100vh;
+    display: grid;
+    grid-template-areas: 
+    'header'
+    'main'
+    'footer'
+    ;
+}
+main {
+    display: grid;
+    column-gap: 20px;
+    grid-template-areas: 
+    'main-section-one'
+    'main-section-two'
+    'main-section-three'
+    'main-section-four'
+    'main-section-five'
+    'main-section-six'
+    'main-section-seven'
+    'main-section-eight'
+    'main-section-nine'
+    'main-section-ten'
+    'main-section-eleven'
+    'main-section-twelve'
+    'main-section-thirteen'
+    'main-section-fourteen'
+    'main-section-fifteen'
+    'main-section-sixteen'
+    'main-section-seventeen'
+    'main-section-eighteen'
+    'main-section-ninteen'
+    'main-section-twenty'
+    'main-section-twentyone'
+    'main-section-twentytwo'
+    'main-section-twentythree'
+    'main-section-twentyfour'
+    'main-section-twentyfive'
+    'main-section-twentysix'
+    'main-section-twentyseven'
+    ;
+}
+header{grid-area: header;}
+main{grid-area: main;}
+.main-section:nth-child(1){grid-area: main-section-one;}
+.main-section:nth-child(2){grid-area: main-section-two;}
+.main-section:nth-child(3){grid-area: main-section-three;}
+.main-section:nth-child(4){grid-area: main-section-four;}
+.main-section:nth-child(5){grid-area: main-section-five;}
+.main-section:nth-child(6){grid-area: main-section-six;}
+.main-section:nth-child(7){grid-area: main-section-seven;}
+.main-section:nth-child(8){grid-area: main-section-eight;}
+.main-section:nth-child(9){grid-area: main-section-nine;}
+.main-section:nth-child(10){grid-area: main-section-ten;}
+.main-section:nth-child(11){grid-area: main-section-eleven;}
+.main-section:nth-child(12){grid-area: main-section-twelve;}
+.main-section:nth-child(13){grid-area: main-section-thirteen;}
+.main-section:nth-child(14){grid-area: main-section-fourteen;}
+.main-section:nth-child(15){grid-area: main-section-fifteen;}
+.main-section:nth-child(16){grid-area: main-section-sixteen;}
+.main-section:nth-child(17){grid-area: main-section-seventeen;}
+.main-section:nth-child(18){grid-area: main-section-eighteen;}
+.main-section:nth-child(19){grid-area: main-section-ninteen;}
+.main-section:nth-child(20){grid-area: main-section-twenty;}
+.main-section:nth-child(21){grid-area: main-section-twentyone;}
+.main-section:nth-child(22){grid-area: main-section-twentytwo;}
+.main-section:nth-child(23){grid-area: main-section-twentythree;}
+.main-section:nth-child(24){grid-area: main-section-twentyfour;}
+.main-section:nth-child(25){grid-area: main-section-twentyfive;}
+.main-section:nth-child(26){grid-area: main-section-twentysix;}
+.main-section:nth-child(27){grid-area: main-section-twentyseven;}
+footer{grid-area: footer;}
+
+/* Image styling
+-------------*/
+.img-container-1 {
+    background-color: #D98580;
+}
+.img-container-2 {
+    background-color: #7BDBA5;
+    margin-top: 20px;
+}
+.img-container-3 {
+    background-color: #D98580;
+}
+.img-container-4 {
+    background-color: #7BDBA5;
+    margin-top: 20px;
+}
+.img-container-5 {
+    background-color: #DBC350;
+    margin-top: 20px;
+}
+.img-container-6 {
+    background-color: #D98580;
+}
+.robo-arm-img {
+    display: none;
+}
+/* Sub-header styling
+-------------*/
+.cosmology {
+    width: 225px;
+}
+.evolution {
+    width: 200px;
+}
+.biology {
+    width: 340px;
+}
+.robotics {
+    width: 250px;
+}
+.ecology {
+    width: 175px;
+}
+
+/* Media Queries
+-------------*/
+/* Tablet and smaller screen sizes-------------*/
+@media(min-width: 641px){
+
+}
+/*  SMALL Desktop screen sizes-------------*/
+@media(min-width: 938px){ 
+    main {
+        display: grid;
+        column-gap: 40px;
+        grid-template-columns: 2fr 1fr;
+        grid-template-areas: 
+        'main-section-two main-section-one'
+        'main-section-three main-section-four'
+        'main-section-five main-section-four'
+        'main-section-six main-section-four'
+        'main-section-seven none'
+        'main-section-eight none'
+        'main-section-nine main-section-ten'
+        'main-section-eleven main-section-ten'
+        'main-section-twelve main-section-ten'
+        'main-section-thirteen main-section-ten'
+        'main-section-fourteen main-section-fifteen'
+        'main-section-sixteen main-section-fifteen'
+        'main-section-seventeen main-section-fifteen'
+        'main-section-eighteen main-section-ninteen'
+        'main-section-twenty main-section-ninteen'
+        'main-section-twentyone main-section-twentyone'
+        'main-section-twentytwo main-section-twentythree'
+        'main-section-twentyfour main-section-twentythree'
+        'main-section-twentyfive zero'
+        'main-section-twentysix main-section-twentyseven'
+        ;
+    }
+    .img-container-5 {
+        margin-top: 0;
+    }
+    .robo-arm-img {
+        display: block;
+    }
+}
+/* LARGE Desktop screen sizes-------------*/
+@media only screen and (min-width: 1281px) {
+    main {
+        display: grid;
+        column-gap: 40px;
+        grid-template-columns: 2fr 1fr;
+        grid-template-areas: 
+        'main-section-two main-section-one'
+        'main-section-three main-section-four'
+        'main-section-five main-section-four'
+        'main-section-six main-section-four'
+        'main-section-seven none'
+        'main-section-eight none'
+        'main-section-nine main-section-ten'
+        'main-section-eleven main-section-ten'
+        'main-section-twelve main-section-ten'
+        'main-section-thirteen main-section-ten'
+        'main-section-fourteen main-section-fifteen'
+        'main-section-sixteen main-section-fifteen'
+        'main-section-seventeen main-section-fifteen'
+        'main-section-eighteen main-section-ninteen'
+        'main-section-eighteen main-section-twenty'
+        'main-section-twentyone main-section-twenty'
+        'main-section-twentytwo main-section-twentythree'
+        'main-section-twentyfour main-section-twentythree'
+        'main-section-twentyfive zero'
+        'main-section-twentysix main-section-twentyseven'
+        ;
+    }
+}
+/* 
+-------------*/
+/* 
+'main-section-two main-section-one'
+        'main-section-three main-section-four'
+        'main-section-five main-section-four'
+        'main-section-six zero'
+        'main-section-seven zero'
+        'main-section-eight main-section nine'
+        'main-section-eight main-section-ten'
+        'main-section-eleven zero'
+        'main-section-twelve zero'
+        'main-section-thirteen main-section-fourteen'
+        'main-section-fifteen zero'
+        'main-section-sixteen zero'
+        'main-section-seventeen main-section-eighteen'
+        'main-section-ninteen zero'
+        'main-section-twenty zero'
+        'main-section-twentythree main-section-twentyone'
+        'main-section-twentytwo main-section-twentyone'
+        'main-section-twentyfour zero'
+        'main-section-twentyfive zero'
+        'main-section-twentysix main-section-twentyseven'
+-------------*/

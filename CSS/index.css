@@ -41,25 +41,7 @@ footer{grid-area: footer;}
 
 /* Image styling
 -------------*/
-.home-img-1, .home-img-2 {
-    width: 100%;
-    height: auto;
-    object-fit: contain;
-}
-.home-img-3, .home-img-4 {
-    width: 100%;
-    height: auto;
-    object-fit: contain;
-    display: block;
-    margin: auto;
-}
 
-.img-container-1, .img-container-2, .img-container-3, .img-container-4 {
-    border-radius: 24px;
-    padding: 16px;
-    display: block;
-    margin: auto;
-}
 .img-container-1 {
     background-color: #7BDBA5;
 }
@@ -97,7 +79,7 @@ footer{grid-area: footer;}
     }
 }
 /*  SMALL Desktop screen sizes-------------*/
-@media(min-width: 801px){
+@media(min-width: 938px){
     main {
         display: grid;
         column-gap: 40px;
