@@ -40,6 +40,8 @@ main {
     'main-section-twentyfive'
     'main-section-twentysix'
     'main-section-twentyseven'
+    'main-section-twentyeight'
+    'main-section-twentynine'
     ;
 }
 header{grid-area: header;}
@@ -71,51 +73,25 @@ main{grid-area: main;}
 .main-section:nth-child(25){grid-area: main-section-twentyfive;}
 .main-section:nth-child(26){grid-area: main-section-twentysix;}
 .main-section:nth-child(27){grid-area: main-section-twentyseven;}
+.main-section:nth-child(28){grid-area: main-section-twentyeight;}
+.main-section:nth-child(29){grid-area: main-section-twentynine;}
+
 footer{grid-area: footer;}
 
 /* Image styling
 -------------*/
 .img-container-1 {
-    background-color: #D98580;
+    background-color: #7BDBA5;
 }
 .img-container-2 {
-    background-color: #7BDBA5;
+    background-color: #D98580;
     margin-top: 20px;
 }
 .img-container-3 {
-    background-color: #D98580;
-}
-.img-container-4 {
-    background-color: #7BDBA5;
-    margin-top: 20px;
-}
-.img-container-5 {
     background-color: #DBC350;
-    margin-top: 20px;
 }
-.img-container-6 {
-    background-color: #D98580;
-}
-.robo-arm-img {
-    display: none;
-}
-/* Sub-header styling
--------------*/
-.cosmology {
-    width: 225px;
-}
-.evolution {
-    width: 200px;
-}
-.biology {
-    width: 340px;
-}
-.robotics {
-    width: 250px;
-}
-.ecology {
-    width: 175px;
-}
+
+
 
 /* Media Queries
 -------------*/
@@ -133,63 +109,29 @@ footer{grid-area: footer;}
         'main-section-two main-section-one'
         'main-section-three main-section-four'
         'main-section-five main-section-four'
-        'main-section-six main-section-four'
+        'main-section-six main-section-six'
         'main-section-seven none'
-        'main-section-eight none'
-        'main-section-nine main-section-ten'
+        'main-section-nine main-section-eight'
+        'main-section-eleven main-section-eight'
         'main-section-eleven main-section-ten'
-        'main-section-twelve main-section-ten'
-        'main-section-thirteen main-section-ten'
-        'main-section-fourteen main-section-fifteen'
-        'main-section-sixteen main-section-fifteen'
-        'main-section-seventeen main-section-fifteen'
-        'main-section-eighteen main-section-ninteen'
+        'main-section-twelve main-section-fifteen'
+        'main-section-thirteen main-section-fifteen'
+        'main-section-fourteen fifteen'
+        'main-section-sixteen main-section-sixteen'
+        'main-section-seventeen main-section-seventeen'
+        'main-section-eighteen zero'
         'main-section-twenty main-section-ninteen'
-        'main-section-twentyone main-section-twentyone'
-        'main-section-twentytwo main-section-twentythree'
-        'main-section-twentyfour main-section-twentythree'
-        'main-section-twentyfive zero'
-        'main-section-twentysix main-section-twentyseven'
+        'main-section-twentyone main-section-twentytwo'
+        'main-section-twentyone main-section-twentytwo'
+        'main-section-twentythree main-section-twentythree'
+        'main-section-twentyfour main-section-twentyfour'
+        'main-section-twentysix main-section-twentyfive'
+        'main-section-twentyseven main-section-twentyeight'
+        'main-section-twentyseven main-section-twentyeight'
+        'main-section-twentynine main-section-twentynine'
         ;
-    }
-    .img-container-5 {
-        margin-top: 0;
-    }
-    .robo-arm-img {
-        display: block;
     }
 }
 /* LARGE Desktop screen sizes-------------*/
 @media only screen and (min-width: 1281px) {
-    main {
-        display: grid;
-        column-gap: 40px;
-        grid-template-columns: 2fr 1fr;
-        grid-template-areas: 
-        'main-section-two main-section-one'
-        'main-section-three main-section-four'
-        'main-section-five main-section-four'
-        'main-section-six main-section-four'
-        'main-section-seven none'
-        'main-section-eight none'
-        'main-section-nine main-section-ten'
-        'main-section-eleven main-section-ten'
-        'main-section-twelve main-section-ten'
-        'main-section-thirteen main-section-ten'
-        'main-section-fourteen main-section-fifteen'
-        'main-section-sixteen main-section-fifteen'
-        'main-section-seventeen main-section-fifteen'
-        'main-section-eighteen main-section-ninteen'
-        'main-section-eighteen main-section-twenty'
-        'main-section-twentyone main-section-twenty'
-        'main-section-twentytwo main-section-twentythree'
-        'main-section-twentyfour main-section-twentythree'
-        'main-section-twentyfive zero'
-        'main-section-twentysix main-section-twentyseven'
-        ;
-    }
 }
-/* 
--------------*/
-/* 
--------------*/

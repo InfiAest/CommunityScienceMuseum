@@ -93,6 +93,12 @@ nav li {
 #search-menu:checked ~ .searchbox {
     display: block;
 }
+.active {
+    background-image: url(../images/active-background.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;    
+}
 
 /* Search bar and button styling
 -------------*/
@@ -194,7 +200,34 @@ h2 {
     font-size: 1.2em;
     color: #000000;
 }
-
+/* Button styling
+-------------*/
+.button {
+    float: right;
+    background-image: url(../images/button.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.button:hover {
+    background-image: url(../images/button-hovered.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.button-container a {
+    text-decoration: none;
+    display: block;
+    padding: 80px;
+    margin: 10px 5px;
+    font-size: 1.4em;
+    font-family: tachyon,sans-serif;
+    text-align: center;
+    color: #000000;
+}
+.button-container a:hover {
+    color: #438F64;
+}
 
 /* Footer styling
 -------------*/
