@@ -134,6 +134,7 @@ form.searchbox button:hover {
 -------------*/
 main {
     padding: 0 10px;
+    margin: 0;
 }
 .desktop-search {
     display: none;
@@ -200,6 +201,11 @@ h2 {
     font-size: 1.2em;
     color: #000000;
 }
+.anchor {
+    position: relative;
+    top: -80px;
+    visibility: hidden;
+}
 /* Button styling
 -------------*/
 .button {
@@ -218,8 +224,7 @@ h2 {
 .button-container a {
     text-decoration: none;
     display: block;
-    padding: 80px;
-    margin: 10px 5px;
+    padding: 65px 30px;
     font-size: 1.4em;
     font-family: tachyon,sans-serif;
     text-align: center;
@@ -258,7 +263,7 @@ footer a {
 @media(min-width: 938px){
     main {
         margin: 0 6%;
-      }
+    }
     .nav-flex-container {
         margin: 0 2%;
     }

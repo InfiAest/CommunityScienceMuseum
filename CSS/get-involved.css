@@ -35,13 +35,6 @@ main {
     'main-section-twenty'
     'main-section-twentyone'
     'main-section-twentytwo'
-    'main-section-twentythree'
-    'main-section-twentyfour'
-    'main-section-twentyfive'
-    'main-section-twentysix'
-    'main-section-twentyseven'
-    'main-section-twentyeight'
-    'main-section-twentynine'
     ;
 }
 header{grid-area: header;}
@@ -68,14 +61,20 @@ main{grid-area: main;}
 .main-section:nth-child(20){grid-area: main-section-twenty;}
 .main-section:nth-child(21){grid-area: main-section-twentyone;}
 .main-section:nth-child(22){grid-area: main-section-twentytwo;}
-.main-section:nth-child(23){grid-area: main-section-twentythree;}
-.main-section:nth-child(24){grid-area: main-section-twentyfour;}
-.main-section:nth-child(25){grid-area: main-section-twentyfive;}
-.main-section:nth-child(26){grid-area: main-section-twentysix;}
-.main-section:nth-child(27){grid-area: main-section-twentyseven;}
-.main-section:nth-child(28){grid-area: main-section-twentyeight;}
-.main-section:nth-child(29){grid-area: main-section-twentynine;}
 footer{grid-area: footer;}
+
+
+/* Sub-header styling
+-------------*/
+.support {
+    width: 175px;
+}
+.volunteer {
+    width: 210px;
+}
+.internship {
+    width: 230px;
+}
 
 /* Image styling
 -------------*/
@@ -84,31 +83,40 @@ footer{grid-area: footer;}
 }
 .img-container-2 {
     background-color: #D98580;
-    margin-top: 20px;
 }
 .img-container-3 {
     background-color: #DBC350;
-    margin-top: 20px;
 }
-/* Sub-header styling
--------------*/
-.for-kids {
-    width: 180px;
-}
-.for-teachers {
-    width: 260px;
-}
-.for-researchers {
-    width: 320px;
-}
-
-
 
 /* Media Queries
 -------------*/
 /* Tablet and smaller screen sizes-------------*/
 @media(min-width: 641px){
-
+    main {
+        display: grid;
+        grid-template-areas: 
+        'main-section-two main-section-two'
+        'main-section-three main-section-three'
+        'main-section-four main-section-four'
+        'main-section-five main-section-five'
+        'main-section-six main-section-seven'
+        'main-section-eight main-section-eight'
+        'main-section-nine main-section-nine'
+        'main-section-ten main-section-ten'
+        'main-section-eleven main-section-eleven'
+        'main-section-twelve main-section-twelve'
+        'main-section-thirteen main-section-thirteen'
+        'main-section-fourteen main-section-fourteen'
+        'main-section-fifteen main-section-fifteen'
+        'main-section-sixteen main-section-sixteen'
+        'main-section-seventeen main-section-seventeen'
+        'main-section-eighteen main-section-eighteen'
+        'main-section-ninteen main-section-ninteen'
+        'main-section-twenty main-section-twenty'
+        'main-section-twentyone main-section-twentyone'
+        'main-section-twentytwo main-section-twentytwo'
+        ;
+    }
 }
 /*  SMALL Desktop screen sizes-------------*/
 @media(min-width: 938px){ 
@@ -120,26 +128,19 @@ footer{grid-area: footer;}
         'main-section-two main-section-one'
         'main-section-three main-section-four'
         'main-section-five main-section-four'
-        'main-section-six main-section-six'
-        'main-section-seven none'
-        'main-section-nine main-section-eight'
-        'main-section-eleven main-section-eight'
-        'main-section-eleven main-section-ten'
-        'main-section-twelve main-section-fifteen'
-        'main-section-thirteen main-section-fifteen'
-        'main-section-fourteen main-section-fifteen'
-        'main-section-sixteen main-section-sixteen'
+        'main-section-six main-section-seven'
+        'main-section-eight main-section-eight'
+        'main-section-nine main-section-eleven'
+        'main-section-ten main-section-eleven'
+        'main-section-twelve main-section-twelve'
+        'main-section-thirteen main-section-thirteen'
+        'main-section-fourteen main-section-sixteen'
+        'main-section-fifteen main-section-sixteen'
         'main-section-seventeen main-section-seventeen'
         'main-section-eighteen zero'
-        'main-section-twenty main-section-ninteen'
-        'main-section-twentyone main-section-twentytwo'
-        'main-section-twentyone main-section-twentytwo'
-        'main-section-twentythree main-section-twentythree'
-        'main-section-twentyfour main-section-twentyfour'
-        'main-section-twentysix main-section-twentyfive'
-        'main-section-twentyseven main-section-twentyeight'
-        'main-section-twentyseven main-section-twentyeight'
-        'main-section-twentynine main-section-twentynine'
+        'main-section-twenty main-section-twentyone'
+        'main-section-ninteen main-section-twentyone'
+        'main-section-twentytwo main-section-twentytwo'
         ;
     }
 }
