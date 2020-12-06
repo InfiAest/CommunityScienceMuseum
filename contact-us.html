@@ -41,73 +41,85 @@
                 </form>
             </section>
                 <h1>Contact Us</h1>
-            <form class="contact-form" action="form-success.php" method="POST">
-                <fieldset>
-                        <legend>Select from the list below what you would like to contact us about:</legend>
+            <form class="total-form" action="form-success.php" method="POST">
+                        <legend><h3>Select from the list below what you would like to contact us about:</h3></legend>
                                 <input type="radio" id="donations" name="contact" value="donations">
-                                <label for="donations">Donations</label>
+                                <label for="donations"><p>Donations</p></label>
                                 <input type="radio" id="volunteering" name="contact" value="volunteering">
-                                <label for="volunteering">Volunteering</label>
+                                <label for="volunteering"><p>Volunteering</p></label>
                                 <input type="radio" id="internships" name="contact" value="internships">
-                                <label for="internships">Internships</label>
+                                <label for="internships"><p>Internships</p></label>
                                 <input type="radio" id="other" name="contact" value="other">
-                                <label for="other">Something Else</label>
-                        <legend>Want to make a donation?</legend>
+                                <label for="other"><p>Something Else</p></label>
                     <div class="donation-form">
-                            <label for="name">Your Full Name</label>
+                        <div class="donate sub-header">
+                            <legend><h2>Want to donate?</h2></legend>
+                        </div>
+                            <label for="name"><p>Your Full Name</p></label>
                             <input type="text" name="name" class="form__input">
-                            <label for="email">Your Email Address</label>
+                            <label for="email"><p>Your Email Address</p></label>
                             <input type="email" name="email" class="form__input" required>
-                            <label for="Phone">Your Phone Number</label>
+                            <label for="Phone"><p>Your Phone Number</p></label>
                             <input type="tel" name="Phone" class="form__input" required>  
-                            <label for="message">Please write a description of what you want to donate and
-                                we will contact you as soon as possible...
+                            <label for="message"><p>Please write a description of what you want to donate and
+                                we will contact you as soon as possible...</p>
                             </label>
-                            <textarea name="message"></textarea>
-                            <a href="booking-confirmation.html" class="button">Send Message</a>
+                            <textarea name="message" placeholder="Start writing here..."></textarea>
+                        <div class="button-container">
+                            <a href="booking-confirmation.html" class="button" alt="link to booking confirmation page">Send Form</a>
+                        </div>
                     </div>
-                        <legend>Want to Volunteer?</legend>
-                    <div class="donation-form">
-                            <label for="name">Your Full Name</label>
+                    <div class="volunteer-form">
+                        <div class="volunteer sub-header">
+                            <legend><h2>Want to Volunteer?</h2></legend>
+                        </div>
+                            <label for="name"><p>Your Full Name</p></label>
                             <input type="text" name="name" class="form__input">
-                            <label for="email">Your Email Address</label>
+                            <label for="email"><p>Your Email Address</p></label>
                             <input type="email" name="email" class="form__input" required>
-                            <label for="Phone">Your Phone Number</label>
+                            <label for="Phone"><p>Your Phone Number</p></label>
                             <input type="tel" name="Phone" class="form__input" required>  
-                            <label for="message">Please write a decsription of yourself and we will contact you as soon as we can…
-                                (include your age and interests)
+                            <label for="message"><p>Please write a decsription of yourself and we will contact you as soon as we can…
+                                (include your age and interests)</p>
                             </label>
-                            <textarea name="message"></textarea>
-                            <a href="booking-confirmation.html" class="button">Send Message</a>
+                            <textarea name="message" placeholder="Start writing here..."></textarea>
+                            <div class="button-container">
+                                <a href="booking-confirmation.html" class="button" alt="link to booking confirmation page">Send Form</a>
+                            </div>
                     </div>
-                        <legend>Want an internship?</legend>
-                    <div class="donation-form">
-                            <label for="name">Your Full Name</label>
+                    <div class="internship-form">
+                        <div class="internship sub-header">
+                            <legend><h2>Want an internship?</h2></legend>
+                        </div>
+                            <label for="name"><p>Your Full Name</p></label>
                             <input type="text" name="name" class="form__input">
-                            <label for="email">Your Email Address</label>
+                            <label for="email"><p>Your Email Address</p></label>
                             <input type="email" name="email" class="form__input" required>
-                            <label for="Phone">Your Phone Number</label>
+                            <label for="Phone"><p>Your Phone Number</p></label>
                             <input type="tel" name="Phone" class="form__input" required>  
-                            <label for="message">Please write a decsription of yourself and we will contact you as soon as we can…
-                                (include your age and interests)
+                            <label for="message"><p>Please write a decsription of yourself and we will contact you as soon as we can…
+                                (include your age and interests)</p>
                             </label>
-                            <textarea name="message"></textarea>
-                            <label for="cv">Please attatch your CV and Cover letter</label>
+                            <textarea name="message" placeholder="Start writing here..."></textarea>
+                            <label for="cv"><p>Please attatch your CV and Cover letter</p></label>
                             <input type="file" id="cv" name="cv">
-                            <a href="#" class="button">Send Message</a>
+                            <div class="button-container">
+                                <a href="booking-confirmation.html" class="button" alt="link to booking confirmation page">Send Form</a>
+                            </div>
                     </div>
-                </fieldset>
+                    <div class="other-section">
+                        <div class="other sub-header">
+                            <legend><h2>Something else?</h2></legend>
+                        </div>
+                        <p>Give us a call during our opening hours to chat to one of our wonderful members of staff</p>
+                        <i class="fas fa-phone"><p>+47 923 45 678</p></i>
+                        <p>Alternatively, come down and visit us and chat with us in person</p>
+                        <i class="fas fa-map-marker-alt"><p>Haakon Sheteligs plass 10 
+                            5007 
+                            Bergen</p></i>
+                        <a href="visit-us.html" class="hyperlink">(See map on the Visit Us Page)</a>
+                    </div>
             </form>
-                <div>
-                    <h2>Something Else?</h2>
-                    <p>Give us a call during our opening hours to chat to one of our wonderful members of staff</p>
-                    <p>+47 923 45 678</p>
-                    <p>Alternatively, come down and visit us and chat with us in person</p>
-                    <p>Haakon Sheteligs plass 10 
-                        5007 
-                        Bergen</p>
-                    <a href="visit-us.html" class="button">(See map on the Visit Us Page)</a>
-                </div>
         </main>
         <footer>
             <div class="footer-flex-container">

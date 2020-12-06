@@ -1,0 +1,54 @@
+/* Sub-header styling
+-------------*/
+.donation {
+    width: 180px;
+}
+.volunteer {
+    width: 200px;
+}
+.internship {
+    width: 140px;
+}
+.other {
+    width: 250px;
+}
+/* Form styling
+-------------*/
+.donation-form, .volunteer-form, .internship-form, .other-section {
+    display: none;
+}
+#donations:checked ~ .donation-form {
+    display: block;
+}
+#volunteering:checked ~ .volunteer-form {
+    display: block;
+}
+#internships:checked ~ .internship-form {
+    display: block;
+}
+#other:checked ~ .other-section {
+    display: block;
+}
+
+input[type=radio] {
+    float: left;
+    margin: 6px 5px 5px 6px;
+}
+input[type=text], input[type=email], input[type=tel] {
+    width: 95%;
+    height: 30px;
+    padding: 0 10px;
+    border: 2px solid #7BDBA5;
+    border-radius: 12px;
+    outline: none;
+}
+
+textarea {
+    width: 95%;
+    height: 150px;
+    padding: 10px;
+    border: 2px solid #7BDBA5;
+    border-radius: 12px;
+    resize: none;
+    outline: none;
+}
