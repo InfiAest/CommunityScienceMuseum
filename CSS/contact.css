@@ -64,7 +64,7 @@ input[type=text], input[type=email], input[type=tel] {
     width: 95%;
     font-size: 1em;
     padding: 10px;
-    border: 2px solid #7BDBA5;
+    border: 2px solid #438F64;
     border-radius: 12px;
     outline: none;
 }
@@ -72,7 +72,7 @@ textarea {
     width: 95%;
     height: 150px;
     padding: 10px;
-    border: 2px solid #7BDBA5;
+    border: 2px solid #438F64;
     border-radius: 12px;
     resize: none;
     outline: none;
@@ -87,11 +87,10 @@ textarea {
     text-decoration: none;
 }
 .hyperlink-styling:hover {
-    color: #8f413c;
     text-decoration: underline;
 }
 .hyperlink-styling {
-    color: #438F64;
+    color:#8f413c;
 }
 /* Media Queries
 -------------*/
