@@ -130,6 +130,9 @@ footer{grid-area: footer;}
         'main-section-twentythree main-section-twentyfour'
         ;
     }
+    .img-container-1 {
+        margin-top: 20px;
+    }
 }
 /*  SMALL Desktop screen sizes-------------*/
 @media(min-width: 938px){ 
