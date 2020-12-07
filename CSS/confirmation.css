@@ -1,0 +1,70 @@
+/* CSS GRID
+-------------*/
+body {
+    min-height: 100vh;
+    display: grid;
+    grid-template-areas: 
+    'header'
+    'main'
+    'footer'
+    ;
+}
+main {
+    display: grid;
+    column-gap: 20px;
+    grid-template-areas: 
+    'main-section-one'
+    'main-section-two'
+    'main-section-three'
+    'main-section-four'
+    'main-section-five'
+    'main-section-six'
+    'main-section-seven'
+    'main-section-eight'
+    ;
+}
+header{grid-area: header;}
+main{grid-area: main;}
+.main-section:nth-child(1){grid-area: main-section-one;}
+.main-section:nth-child(2){grid-area: main-section-two;}
+.main-section:nth-child(3){grid-area: main-section-three;}
+.main-section:nth-child(4){grid-area: main-section-four;}
+.main-section:nth-child(5){grid-area: main-section-five;}
+.main-section:nth-child(6){grid-area: main-section-six;}
+.main-section:nth-child(7){grid-area: main-section-seven;}
+.main-section:nth-child(8){grid-area: main-section-eight;}
+footer{grid-area: footer;}
+
+/* Sub-header styling
+-------------*/
+.before-visit {
+    width: 320px;
+}
+
+/* Media Queries
+-------------*/
+/* Tablet and smaller screen sizes-------------*/
+@media(min-width: 641px){
+
+}
+/*  SMALL Desktop screen sizes-------------*/
+@media(min-width: 938px){ 
+    main {
+        display: grid;
+        column-gap: 40px;
+        grid-template-columns: 2fr 1fr;
+        grid-template-areas: 
+        'zero main-section-one'
+        'main-section-two main-section-two'
+        'main-section-three main-section-three'
+        'main-section-four main-section-four'
+        'main-section-five main-section-eight'
+        'main-section-six main-section-eight'
+        'main-section-seven main-section-eight'
+        ;
+    }
+}
+/* LARGE Desktop screen sizes-------------*/
+@media only screen and (min-width: 1281px) {
+     
+}

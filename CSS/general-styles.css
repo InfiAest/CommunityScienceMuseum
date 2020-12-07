@@ -78,6 +78,7 @@ nav li {
     align-self: start;
     color: #000000;
     font-size: 1.5em;
+    padding: 10px;
 }
 #hamburger-menu, #search-menu, .searchbox {
     display: none;
@@ -89,7 +90,8 @@ nav li {
     color: #000000;
     font-size: 1.5em;
     float: right;
-    margin-top: -25px;
+    padding: 10px;
+    margin-top: -45px;
 }
 #search-menu:checked ~ .searchbox {
     display: block;
@@ -107,6 +109,7 @@ form.searchbox button {
     float: right;
     margin: 40px 0 10px 5px;
     width: 20%;
+    height: auto;
     padding: 10px;
     background: #ffffff;
     color: #DBC350;

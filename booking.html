@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://use.typekit.net/gvs4teu.css">
         <link rel="stylesheet" href="CSS/general-styles.css">
+        <link rel="stylesheet" href="CSS/booking.css">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" rel="stylesheet">
     </head>
     <body>
@@ -39,51 +40,57 @@
                     <input type="text" placeholder="Search.." name="Search">
                 </form>
             </section>
+            <section class="main-section">
                 <h1>Booking Form</h1>
-            <form>
-                <fieldset>
-                        <label for="name">Your Full Name</label>
-                        <input type="text" name="name" class="form__input">
-                        <label for="email">Your Email Address</label>
-                        <input type="email" name="email" class="form__input" required>
-                        <label for="Phone">Your Phone Number</label>
-                        <input type="tel" name="Phone" class="form__input" required>  
-                        <label for="tickets">Select number of tickets you want...</label>
-                                <select name="tickets" class="form__input">
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5">5</option>
-                                    <option value="6">6</option>
-                                    <option value="7">7</option>
-                                    <option value="8">8</option>
-                                    <option value="9">9</option>
-                                    <option value="10">10</option>
-                                    <option value="11">11</option>
-                                    <option value="12">12</option>
-                                    <option value="schoolclass">School Class</option>
-                                </select>
-                            <label for="message">Any notes if necessary...</label>
-                            <textarea name="message"></textarea>
-                            <label for="event">Select which event you want to book for...</label>
-                                <select name="events" class="form__input">
-                                    <option value="event-1">Visiting Professor of Aeronautics</option>
-                                    <option value="event-2">Night in the Museum</option>
-                                    <option value="event-3">Energetica Exhibition on Loan</option>
-                                </select>
-                                <label for="day">Select a date:</label>
-                                <input type="date" id="day" name="day">
-                            <label for="time">Select Time</label>
-                                <select name="time" class="form__input">
-                                    <option value="10">10:00</option>
-                                    <option value="12">12:00</option>
-                                    <option value="14">14:00</option>
-                                    <option value="16">16:00</option>
-                                </select>
-                                <a href="booking-confirmation.html" class="button">Book tickets</a>
-                </fieldset>
-            </form>
+            </section>
+            <section class="main-section">
+                <form>
+                    <label for="name"><p>Your Full Name</p></label>
+                    <input type="text" name="name" class="form__input" required>
+                    <label for="email"><p>Your Email Address</p></label>
+                    <input type="email" name="email" class="form__input" required>
+                    <label for="Phone"><p>Your Phone Number</p></label>
+                    <input type="tel" name="Phone" class="form__input" required>                          <label for="tickets"><p>Select number of tickets you want...</p></label>
+                        <select name="tickets" class="form__input" required>
+                            <option value="1"><p>1</p></option>
+                            <option value="2"><p>2</p></option>
+                            <option value="3"><p>3</p></option>
+                            <option value="4"><p>4</p></option>
+                            <option value="5"><p>5</p></option>
+                            <option value="6"><p>6</p></option>
+                            <option value="7"><p>7</p></option>
+                            <option value="8"><p>8</p></option>
+                            <option value="9"><p>9</p></option>
+                            <option value="10"><p>10</p></option>
+                            <option value="11"><p>11</p></option>
+                            <option value="12"><p>12</p></option>
+                            <option value="schoolclass"><p>School Class</p></option>
+                        </select>
+                    <label for="message"><p>Any notes if necessary...</p></label>
+                    <textarea name="message"></textarea>
+                    <label for="event"><p>Select which event you want to book for...</p></label>
+                        <select name="events" class="form__input" required>
+                            <option value="event-1"><p>Visiting Professor of Aeronautics</p></option>
+                            <option value="event-2"><p>Night in the Museum</p></option>
+                            <option value="event-3"><p>Energetica Exhibition on Loan</p></option>
+                            <option value="event-4"><p>Guided tour</p></option>
+                            <option value="event-4"><p>Young Stars Club</p></option>
+                            <option value="event-4"><p>Holiday Club</p></option>
+                        </select>
+                    <label for="day"><p>Select a date:</p></label>
+                    <input type="date" id="day" name="day" required>
+                    <label for="time"><p>Select Time</p></label>
+                        <select name="time" class="form__input" required>
+                            <option value="10"><p>10:00</p></option>
+                            <option value="12"><p>12:00</p></option>
+                            <option value="14"><p>14:00</p></option>
+                            <option value="16"><p>16:00</p></option>
+                        </select>
+                    <div class="button-container">
+                        <a href="booking-confirmation.html" class="button" alt="link to booking confirmation page">Book Now</a>
+                    </div>
+                </form>
+            </section>
         </main>
         <footer>
             <div class="footer-flex-container">

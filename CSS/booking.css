@@ -25,48 +25,21 @@ main{grid-area: main;}
 .main-section:nth-child(3){grid-area: main-section-three;}
 footer{grid-area: footer;}
 
-
-/* Sub-header styling
--------------*/
-.donate, .other {
-    width: 310px;
-}
-.volunteer {
-    width: 360px;
-}
-.internship {
-    width: 370px;
-}
-
 /* Form styling
 -------------*/
-.donation-form, .volunteer-form, .internship-form, .other-section {
-    display: none;
-}
-#donations:checked ~ .donation-form {
-    display: block;
-}
-#volunteering:checked ~ .volunteer-form {
-    display: block;
-}
-#internships:checked ~ .internship-form {
-    display: block;
-}
-#other:checked ~ .other-section {
-    display: block;
-}
-
-input[type=radio] {
-    float: left;
-    margin: 6px 5px 5px 6px;
-}
-input[type=text], input[type=email], input[type=tel] {
+input[type=text], input[type=email], input[type=tel], input[type="date"] {
     width: 95%;
+}
+select {
+    width: 100%;
+}
+input[type=text], input[type=email], input[type=tel], input[type="date"], select {
     font-size: 1em;
     padding: 10px;
     border: 2px solid #7BDBA5;
     border-radius: 12px;
     outline: none;
+    margin: 0;
 }
 textarea {
     width: 95%;
@@ -76,27 +49,16 @@ textarea {
     border-radius: 12px;
     resize: none;
     outline: none;
+    margin: 0;
 }
-.fa-map-marker-alt, .fa-phone {
-    float: left;
-    font-size: 1.5em;
-    margin: 2px 5px 0 5px;
-    color: #8F413C;
-}
-.hyperlink {
-    text-decoration: none;
-}
-.hyperlink-styling:hover {
-    color: #8f413c;
-    text-decoration: underline;
-}
-.hyperlink-styling {
-    color: #438F64;
-}
+
 /* Media Queries
 -------------*/
 /* Tablet and smaller screen sizes-------------*/
 @media(min-width: 641px){
+}
+/*  SMALL Desktop screen sizes-------------*/
+@media(min-width: 938px){ 
     main {
         display: grid;
         column-gap: 40px;
@@ -106,10 +68,9 @@ textarea {
         'main-section-three main-section-zero'
         ;
     }
-}
-/*  SMALL Desktop screen sizes-------------*/
-@media(min-width: 938px){ 
-    
+    select {
+        width: 98%;
+    }
 }
 /* LARGE Desktop screen sizes-------------*/
 @media only screen and (min-width: 1281px) {
