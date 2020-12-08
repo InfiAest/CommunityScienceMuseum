@@ -41,6 +41,10 @@ footer{grid-area: footer;}
     width: 320px;
 }
 
+.confirmation-page-img {
+    display: none;
+}
+
 /* Media Queries
 -------------*/
 /* Tablet and smaller screen sizes-------------*/
@@ -62,6 +66,9 @@ footer{grid-area: footer;}
         'main-section-six main-section-eight'
         'main-section-seven main-section-eight'
         ;
+    }
+    .confirmation-page-img {
+        display: block;
     }
 }
 /* LARGE Desktop screen sizes-------------*/
