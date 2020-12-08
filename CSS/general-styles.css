@@ -38,6 +38,9 @@ p {
     color: #000000;
 }
 body {
+    width: 100%;
+    height: auto;
+    margin: 0;
     background-image: url(../images/mobile-background.jpg);
     background-position: top left;
     background-repeat: repeat-x; 
@@ -248,7 +251,7 @@ h2 {
 footer {
     background: #7BDBA5;
     margin-top: 80px;
-    padding: 0;
+    padding: 10px 0 10px 0;
 }
 footer a {
     text-decoration: none;
