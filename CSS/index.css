@@ -39,10 +39,9 @@ main{grid-area: main;}
 .main-section:nth-child(10){grid-area: main-section-ten;}
 footer{grid-area: footer;}
 
-/* Image styling
+/* Image container styling
 -------------*/
-
-.img-container-1 {
+.img-container-1, .img-container-4 {
     background-color: #438F64;
 }
 .img-container-2 {
@@ -51,9 +50,6 @@ footer{grid-area: footer;}
 }
 .img-container-3 {
     background-color: #DBC350;
-}
-.img-container-4 {
-    background-color: #438F64;
 }
 
 /* Media Queries

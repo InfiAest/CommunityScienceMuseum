@@ -26,6 +26,8 @@ h2 {
     font-family: rift,sans-serif;
     font-size: 2.75em;
     color: #000000;
+    margin: 0;
+    padding: 10px 20px;
 }
 h3 {
     font-family: rift,sans-serif;
@@ -46,6 +48,11 @@ body {
     background-repeat: repeat-x; 
     background-attachment: fixed; 
 }
+main {
+    padding: 0 10px;
+    margin: 0;
+}
+
 /* Navigation Bar
 ---------------*/
 header {
@@ -139,20 +146,10 @@ form.searchbox input[type=text] {
 form.searchbox button:hover {
     background: #DBC350;
 }
-
-/* Main styling
--------------*/
-main {
-    padding: 0 10px;
-    margin: 0;
-}
 .desktop-search {
     display: none;
 }
-h2 {
-    margin: 0;
-    padding: 10px 20px;
-}
+
 /* Sub-header styling
 -------------*/
 .sub-header {
@@ -160,6 +157,7 @@ h2 {
     border-radius: 24px;
     margin: 100px 0 0 0;
 }
+
 /* Image styling
 -------------*/
 .image-styling {
@@ -177,6 +175,7 @@ h2 {
     display: block;
     width: fit-content;
 }
+
 /* Quick Link styling
 -------------*/
 .quick-links-header {
@@ -218,6 +217,7 @@ h2 {
     top: -80px;
     visibility: hidden;
 }
+
 /* Button styling
 -------------*/
 .button {
@@ -244,6 +244,33 @@ h2 {
 }
 .button-container a:hover {
     color: #8F413C;
+}
+
+/* Form styling
+-------------*/
+input[type=text], input[type=email], input[type=tel], input[type="date"] {
+    width: 95%;
+}
+select {
+    width: 100%;
+}
+input[type=text], input[type=email], input[type=tel], input[type="date"], select {
+    font-size: 1em;
+    padding: 10px;
+    border: 2px solid #438F64;
+    border-radius: 12px;
+    outline: none;
+    margin: 0;
+}
+textarea {
+    width: 95%;
+    height: 150px;
+    padding: 10px;
+    border: 2px solid #438F64;
+    border-radius: 12px;
+    resize: none;
+    outline: none;
+    margin: 0;
 }
 
 /* Footer styling
@@ -276,9 +303,6 @@ footer a:hover {
 
 /* Media Queries
 -------------*/
-/* Tablet and smaller screen sizes-------------*/
-@media(min-width: 641px){
-}
 /*  SMALL Desktop screen sizes-------------*/
 @media(min-width: 938px){
     main {
@@ -314,6 +338,12 @@ footer a:hover {
     .desktop-search {
         display: block;
     }
+    form.searchbox input[type=text] {
+        width: 62%;
+    }
+    form.searchbox button {
+        width: 20%;
+    }
     .footer-flex-container {
         flex-direction: row;
         justify-content: space-evenly;
@@ -322,12 +352,6 @@ footer a:hover {
     }
     footer a {
         text-align: left;
-    }
-    form.searchbox input[type=text] {
-        width: 62%;
-    }
-    form.searchbox button {
-        width: 20%;
     }
 }
 /* LARGE Desktop screen sizes-------------*/

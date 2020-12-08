@@ -68,36 +68,28 @@ footer{grid-area: footer;}
 .energetica {
     max-width: 520px;
 }
-/* Image styling
+
+/* Image Container styling
 -------------*/
 .img-container-1 {
     background-color: #D98580;
 }
-.img-container-2 {
+.img-container-2, .img-container-4 {
     background-color: #438F64;
 }
-.img-container-3 {
+.img-container-3, .img-container-5 {
     background-color: #DBC350;
 }
 .img-container-1, .img-container-2, .img-container-3 {
     margin-top: 20px;
 }
-.img-container-4 {
-    background-color: #438F64;
+.img-container-4, .img-container-5 {
     padding: 8px;
 }
-.img-container-5 {
-    background-color: #DBC350;
-    padding: 8px;
-}
-
 
 /* Media Queries
 -------------*/
-/* Tablet and smaller screen sizes-------------*/
-@media(min-width: 641px){
 
-}
 /*  SMALL Desktop screen sizes-------------*/
 @media(min-width: 938px){ 
     main {
@@ -119,10 +111,6 @@ footer{grid-area: footer;}
         'main-section-seventeen main-section-seventeen main-section-ninteen'
         ;
     }
-}
-/* LARGE Desktop screen sizes-------------*/
-@media only screen and (min-width: 1281px) {
-    
 }
 /* 
 -------------*/

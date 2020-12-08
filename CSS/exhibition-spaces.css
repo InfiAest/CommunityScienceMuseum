@@ -73,28 +73,18 @@ main{grid-area: main;}
 .main-section:nth-child(27){grid-area: main-section-twentyseven;}
 footer{grid-area: footer;}
 
-/* Image styling
+/* Image & image container styling
 -------------*/
-.img-container-1 {
+.img-container-1, .img-container-3, .img-container-6 {
     background-color: #D98580;
 }
-.img-container-2 {
-    background-color: #438F64;
-    margin-top: 20px;
-}
-.img-container-3 {
-    background-color: #D98580;
-}
-.img-container-4 {
+.img-container-2, .img-container-4 {
     background-color: #438F64;
     margin-top: 20px;
 }
 .img-container-5 {
     background-color: #DBC350;
     margin-top: 20px;
-}
-.img-container-6 {
-    background-color: #D98580;
 }
 .robo-arm-img {
     display: none;
@@ -120,10 +110,6 @@ footer{grid-area: footer;}
 
 /* Media Queries
 -------------*/
-/* Tablet and smaller screen sizes-------------*/
-@media(min-width: 641px){
-
-}
 /*  SMALL Desktop screen sizes-------------*/
 @media(min-width: 938px){ 
     main {

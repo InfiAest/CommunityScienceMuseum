@@ -41,16 +41,14 @@ footer{grid-area: footer;}
     width: 320px;
 }
 
+/* Image styling
+-------------*/
 .confirmation-page-img {
     display: none;
 }
 
 /* Media Queries
 -------------*/
-/* Tablet and smaller screen sizes-------------*/
-@media(min-width: 641px){
-
-}
 /*  SMALL Desktop screen sizes-------------*/
 @media(min-width: 938px){ 
     main {
@@ -70,8 +68,4 @@ footer{grid-area: footer;}
     .confirmation-page-img {
         display: block;
     }
-}
-/* LARGE Desktop screen sizes-------------*/
-@media only screen and (min-width: 1281px) {
-     
 }

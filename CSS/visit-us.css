@@ -134,14 +134,6 @@ footer{grid-area: footer;}
         margin-top: 20px;
     }
 }
-/*  SMALL Desktop screen sizes-------------*/
-@media(min-width: 938px){ 
-    
-}
-/* LARGE Desktop screen sizes-------------*/
-@media only screen and (min-width: 1281px) {
-    
-}
 /* 
 -------------*/
 /* 

@@ -55,43 +55,32 @@ footer{grid-area: footer;}
 #other:checked ~ .other-section {
     display: block;
 }
-
 input[type=radio] {
     float: left;
     margin: 6px 5px 5px 6px;
 }
-input[type=text], input[type=email], input[type=tel] {
-    width: 95%;
-    font-size: 1em;
-    padding: 10px;
-    border: 2px solid #438F64;
-    border-radius: 12px;
-    outline: none;
-}
-textarea {
-    width: 95%;
-    height: 150px;
-    padding: 10px;
-    border: 2px solid #438F64;
-    border-radius: 12px;
-    resize: none;
-    outline: none;
-}
+
+/* Icon styling
+-------------*/
 .fa-map-marker-alt, .fa-phone {
     float: left;
     font-size: 1.5em;
     margin: 2px 5px 0 5px;
     color: #8F413C;
 }
+
+/* Hyperlink styling
+-------------*/
 .hyperlink {
     text-decoration: none;
-}
-.hyperlink-styling:hover {
-    text-decoration: underline;
 }
 .hyperlink-styling {
     color:#8f413c;
 }
+.hyperlink-styling:hover {
+    text-decoration: underline;
+}
+
 /* Media Queries
 -------------*/
 /* Tablet and smaller screen sizes-------------*/
@@ -106,14 +95,7 @@ textarea {
         ;
     }
 }
-/*  SMALL Desktop screen sizes-------------*/
-@media(min-width: 938px){ 
-    
-}
-/* LARGE Desktop screen sizes-------------*/
-@media only screen and (min-width: 1281px) {
-    
-}
+
 /* 
 -------------*/
 /* 

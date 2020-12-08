@@ -76,7 +76,7 @@ footer{grid-area: footer;}
     width: 230px;
 }
 
-/* Image styling
+/* Image container styling
 -------------*/
 .img-container-1 {
     background-color: #438F64;
@@ -143,8 +143,4 @@ footer{grid-area: footer;}
         'main-section-twentytwo main-section-twentytwo'
         ;
     }
-}
-/* LARGE Desktop screen sizes-------------*/
-@media only screen and (min-width: 1281px) {
-    
 }
