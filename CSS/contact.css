@@ -16,6 +16,7 @@ main {
     'main-section-one'
     'main-section-two'
     'main-section-three'
+    'main-section-four'
     ;
 }
 header{grid-area: header;}
@@ -23,6 +24,7 @@ main{grid-area: main;}
 .main-section:nth-child(1){grid-area: main-section-one;}
 .main-section:nth-child(2){grid-area: main-section-two;}
 .main-section:nth-child(3){grid-area: main-section-three;}
+.main-section:nth-child(4){grid-area: main-section-four;}
 footer{grid-area: footer;}
 
 
@@ -40,7 +42,7 @@ footer{grid-area: footer;}
 
 /* Form styling
 -------------*/
-.donation-form, .volunteer-form, .internship-form, .other-section {
+.donation-form, .volunteer-form, .internship-form {
     display: none;
 }
 #donations:checked ~ .donation-form {
@@ -52,9 +54,7 @@ footer{grid-area: footer;}
 #internships:checked ~ .internship-form {
     display: block;
 }
-#other:checked ~ .other-section {
-    display: block;
-}
+
 input[type=radio] {
     float: left;
     margin: 6px 5px 5px 6px;
@@ -85,17 +85,20 @@ input[type=radio] {
 -------------*/
 /* Tablet and smaller screen sizes-------------*/
 @media(min-width: 641px){
+    
+}
+/*  SMALL Desktop screen sizes-------------*/
+@media(min-width: 938px) {
     main {
         display: grid;
         column-gap: 40px;
         grid-template-columns: 2fr 1fr;
         grid-template-areas: 
         'main-section-two main-section-one'
-        'main-section-three main-section-zero'
+        'main-section-three main-section-four'
         ;
     }
 }
-
 /* 
 -------------*/
 /* 
