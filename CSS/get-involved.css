@@ -87,6 +87,9 @@ footer{grid-area: footer;}
 .img-container-3 {
     background-color: #DBC350;
 }
+.get-involved-imgs {
+    display: none;
+}
 
 /* Media Queries
 -------------*/
@@ -142,5 +145,8 @@ footer{grid-area: footer;}
         'main-section-ninteen main-section-twentyone'
         'main-section-twentytwo main-section-twentytwo'
         ;
+    }
+    .get-involved-imgs {
+        display: block;
     }
 }

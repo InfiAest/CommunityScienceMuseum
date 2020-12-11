@@ -37,6 +37,8 @@ main {
     'main-section-twentytwo'
     'main-section-twentythree'
     'main-section-twentyfour'
+    'main-section-twentyfive'
+    'main-section-twentysix'
     ;
 }
 header{grid-area: header;}
@@ -65,6 +67,8 @@ main{grid-area: main;}
 .main-section:nth-child(22){grid-area: main-section-twentytwo;}
 .main-section:nth-child(23){grid-area: main-section-twentythree;}
 .main-section:nth-child(24){grid-area: main-section-twentyfour;}
+.main-section:nth-child(25){grid-area: main-section-twentyfive;}
+.main-section:nth-child(26){grid-area: main-section-twentysix;}
 footer{grid-area: footer;}
 
 /* Sub-header styling
@@ -99,7 +103,9 @@ footer{grid-area: footer;}
 .img-container-3 {
     background-color: #DBC350;
 }
-
+.visit-us-imgs {
+    display: none;
+}
 
 /* Media Queries
 -------------*/
@@ -111,27 +117,61 @@ footer{grid-area: footer;}
         grid-template-columns: 2fr 1fr;
         grid-template-areas: 
         'main-section-two main-section-one'
-        'main-section-three main-section-four'
-        'main-section-five main-section-four'
-        'main-section-six main-section-six'
-        'main-section-eight main-section-seven'
-        'main-section-nine main-section-nine'
-        'main-section-ten main-section-ten'
-        'main-section-eleven main-section-twelve'
-        'main-section-eleven main-section-thirteen'
-        'main-section-fourteen main-section-fourteen'
-        'main-section-fifteen main-section-fifteen'
-        'main-section-sixteen main-section-seventeen'
-        'main-section-eighteen main-section-eighteen'
-        'main-section-ninteen main-section-ninteen'
+        'main-section-three main-section-three'
+        'main-section-four main-section-four'
+        'main-section-five main-section-five'
+        'main-section-six main-section-seven'
+        'main-section-eight main-section-eight'
+        'main-section-ten main-section-nine'
+        'main-section-eleven main-section-eleven'
+        'main-section-twelve main-section-twelve'
+        'main-section-thirteen main-section-fourteen'
+        'main-section-fifteen main-section-fourteen'
+        'main-section-sixteen main-section-sixteen'
+        'main-section-seventeen main-section-seventeen'
+        'main-section-eighteen main-section-ninteen'
         'main-section-twenty main-section-twenty'
         'main-section-twentyone main-section-twentyone'
         'main-section-twentytwo main-section-twentytwo'
-        'main-section-twentythree main-section-twentyfour'
+        'main-section-twentythree main-section-twentythree'
+        'main-section-twentyfour main-section-twentyfour'
+        'main-section-twentyfive main-section-twentysix'
         ;
     }
     .img-container-1 {
         margin-top: 20px;
+    }
+}
+/*  SMALL Desktop screen sizes-------------*/
+@media(min-width: 938px){
+    main {
+        display: grid;
+        column-gap: 40px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+        'main-section-two main-section-two main-section-one'
+        'main-section-three main-section-three main-section-four'
+        'main-section-five main-section-five main-section-four'
+        'main-section-six main-section-seven main-section-four'
+        'main-section-eight main-section-eight main-section-eight'
+        'main-section-ten main-section-ten main-section-nine'
+        'main-section-eleven main-section-eleven main-section-eleven'
+        'main-section-twelve main-section-twelve main-section-twelve'
+        'main-section-thirteen main-section-thirteen main-section-fourteen'
+        'main-section-thirteen main-section-thirteen main-section-fifteen'
+        'main-section-sixteen main-section-sixteen main-section-sixteen'
+        'main-section-seventeen main-section-seventeen main-section-seventeen'
+        'main-section-eighteen main-section-eighteen main-section-ninteen'
+        'main-section-twenty main-section-twenty main-section-twenty'
+        'main-section-twentyone main-section-twentyone main-section-twentyone'
+        'main-section-twentytwo main-section-twentytwo main-section-twentytwo'
+        'main-section-twentythree main-section-twentythree main-section-twentythree'
+        'main-section-twentyfour main-section-twentyfour main-section-twentyfour'
+        'main-section-twentyfive main-section-twentyfive main-section-twentysix'
+        ;
+    }
+    .visit-us-imgs {
+        display: block;
     }
 }
 /* 
