@@ -107,8 +107,8 @@ footer{grid-area: footer;}
     display: none;
 }
 .map-styling {
-    width: 420px;
-    height: 320px;
+    width: 320px;
+    height: 220px;
     border-radius: 24px;
 }
 
@@ -145,6 +145,10 @@ footer{grid-area: footer;}
     }
     .img-container-1 {
         margin-top: 20px;
+    }
+    .map-styling {
+        width: 380px;
+        height: 280px;
     }
 }
 /*  SMALL Desktop screen sizes-------------*/
