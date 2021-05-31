@@ -1,103 +1,136 @@
 /* CSS GRID
 -------------*/
 body {
-    min-height: 100vh;
-    display: grid;
-    grid-template-areas: 
-    'header'
-    'main'
-    'footer'
-    ;
+  min-height: 100vh;
+  display: grid;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
 }
 main {
-    display: grid;
-    column-gap: 20px;
-    grid-template-areas: 
-    'main-section-one'
-    'main-section-two'
-    'main-section-three'
-    'main-section-four'
-    ;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-areas:
+    "main-section-one"
+    "main-section-two"
+    "main-section-three"
+    "main-section-four";
 }
-header{grid-area: header;}
-main{grid-area: main;}
-.main-section:nth-child(1){grid-area: main-section-one;}
-.main-section:nth-child(2){grid-area: main-section-two;}
-.main-section:nth-child(3){grid-area: main-section-three;}
-.main-section:nth-child(4){grid-area: main-section-four;}
-footer{grid-area: footer;}
-
+header {
+  grid-area: header;
+}
+main {
+  grid-area: main;
+}
+.main-section:nth-child(1) {
+  grid-area: main-section-one;
+}
+.main-section:nth-child(2) {
+  grid-area: main-section-two;
+}
+.main-section:nth-child(3) {
+  grid-area: main-section-three;
+}
+.main-section:nth-child(4) {
+  grid-area: main-section-four;
+}
+footer {
+  grid-area: footer;
+}
 
 /* Sub-header styling
 -------------*/
-.donate, .other {
-    width: 310px;
+.donate,
+.other {
+  width: 310px;
+  margin-bottom: 20px;
 }
 .volunteer {
-    width: 360px;
+  width: 360px;
+  margin-bottom: 20px;
 }
 .internship {
-    width: 370px;
+  width: 370px;
+  margin-bottom: 20px;
 }
 
 /* Form styling
 -------------*/
-.donation-form, .volunteer-form, .internship-form {
-    display: none;
+.donation-form,
+.volunteer-form,
+.internship-form {
+  display: none;
 }
 #donations:checked ~ .donation-form {
-    display: block;
+  display: block;
 }
 #volunteering:checked ~ .volunteer-form {
-    display: block;
+  display: block;
 }
 #internships:checked ~ .internship-form {
-    display: block;
+  display: block;
 }
 
-input[type=radio] {
-    float: left;
-    margin: 6px 5px 5px 6px;
+input[type="radio"] {
+  float: left;
+  margin: 6px 5px 5px 6px;
+}
+
+label {
+  display: block;
+  font-family: sys-tt, sans-serif;
+  font-size: 1.2em;
+  color: #000000;
+}
+input {
+  font-family: sys-tt, sans-serif;
+  font-size: 1.2em;
+  color: #000000;
+}
+textarea {
+  font-family: sys-tt, sans-serif;
+  font-size: 1.2em;
+  color: #000000;
 }
 
 /* Icon styling
 -------------*/
-.fa-map-marker-alt, .fa-phone {
-    float: left;
-    font-size: 1.5em;
-    margin: 2px 5px 0 5px;
-    color: #8F413C;
+.fa-map-marker-alt,
+.fa-phone {
+  float: left;
+  font-size: 1.5em;
+  margin: 2px 5px 0 5px;
+  color: #8f413c;
 }
 
 /* Hyperlink styling
 -------------*/
 .hyperlink {
-    text-decoration: none;
+  text-decoration: none;
 }
 .hyperlink-styling {
-    color:#8f413c;
+  color: #8f413c;
 }
 .hyperlink-styling:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 /* Media Queries
 -------------*/
 /* Tablet and smaller screen sizes-------------*/
-@media(min-width: 641px){
-    
+@media (min-width: 641px) {
 }
 /*  SMALL Desktop screen sizes-------------*/
-@media(min-width: 938px) {
-    main {
-        display: grid;
-        column-gap: 40px;
-        grid-template-columns: 2fr 1fr;
-        grid-template-areas: 
-        'main-section-two main-section-one'
-        'main-section-three main-section-four'
-        ;
-    }
+@media (min-width: 938px) {
+  main {
+    display: grid;
+    grid-gap: 40px;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas:
+      "main-section-two main-section-one"
+      "main-section-three main-section-four";
+  }
 }
 /* 
 -------------*/

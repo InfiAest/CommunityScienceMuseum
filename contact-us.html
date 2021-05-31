@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <title>Community Science Museum Contact Page</title>
         <meta name="description" content="Get in touch with us at the Community Science Museum so we can answer any questions you may have.">
@@ -12,13 +12,14 @@
     <body>
         <header>
             <div class="nav-flex-container">
-                <label class="hamburger-label" for="hamburger-menu"><i class="fas fa-bars"></i></label>
+                <label class="hamburger-label" for="hamburger-menu"><i class="fas fa-bars" aria-label="hamburger menu"></i></label>
                 <input type="checkbox" id="hamburger-menu">
-                <label class="search-label" for="search-menu"><i class="fas fa-search"></i></label>
+                <label class="search-label" for="search-menu"><i class="fas fa-search" aria-label="search"></i></label>
                 <input type="checkbox" id="search-menu">
                 <a href="index.html"><img class="logo" src="images/csm-logo-500px.png" alt="Community Science Museum logo which acts as the home button"></a>
                 <nav>
                     <ul>
+                        <li><a href="index.html">Home</a></li>
                         <li><a href="exhibition-spaces.html">Exhibition Spaces</a></li>
                         <li><a href="explore.html">Explore</a></li>
                         <li><a href="events.html">Events & Exhibitions</a></li>
@@ -30,84 +31,84 @@
                 <form class="searchbox" action="action_page.php">
                     <div class="searchbox-flex-container">
                         <input type="text" placeholder="Search.." name="Search">
-                        <button type="submit"><i class="fa fa-search"></i></button>
+                        <button type="submit" aria-label="search button"><i class="fa fa-search" aria-label="search"></i></button>
                     </div>
                 </form>
             </div>    
         </header>
         <main>
-            <section class="main-section">
+            <div class="main-section">
                 <form class=" desktop-search searchbox" action="action_page.php">
                     <div class="searchbox-flex-container">
                         <input type="text" placeholder="Search.." name="Search">
-                        <button type="submit"><i class="fa fa-search"></i></button>
+                        <button type="submit" aria-label="search button"><i class="fa fa-search" aria-label="search"></i></button>
                     </div>
                 </form>
-            </section>
-            <section class="main-section">
+            </div>
+            <div class="main-section">
                 <h1>Contact Us</h1>
-            </section>
-            <section class="main-section">
+            </div>
+            <div class="main-section">
                 <form class="total-form" action="form-success.php" method="POST">
                         <legend><h3>Select from the list below what you would like to contact us about:</h3></legend>
                         <input type="radio" id="donations" name="contact" value="donations">
-                        <label for="donations"><p>Donations</p></label>
+                        <label for="donations">Donations</label>
                         <input type="radio" id="volunteering" name="contact" value="volunteering">
-                        <label for="volunteering"><p>Volunteering</p></label>
+                        <label for="volunteering">Volunteering</label>
                         <input type="radio" id="internships" name="contact" value="internships">
-                        <label for="internships"><p>Internships</p></label>
+                        <label for="internships">Internships</label>
                 <div class="donation-form">
                     <div class="donate sub-header">
                         <legend><h2>Want to donate?</h2></legend>
                     </div>
-                        <label for="name"><p>Your Full Name</p></label>
-                        <input type="text" name="name" class="form__input">
-                        <label for="email"><p>Your Email Address</p></label>
-                        <input type="email" name="email" class="form__input" required>
-                        <label for="Phone"><p>Your Phone Number</p></label>
-                        <input type="tel" name="Phone" class="form__input" required>  
-                        <label for="message"><p>Please write a description of what you want to donate and we will contact you as soon as possible...</p></label>
-                        <textarea name="message" placeholder="Start writing here..."></textarea>
+                        <label for="donate-name">Your Full Name</label>
+                        <input type="text" name="name" id="donate-name" class="form__input">
+                        <label for="donate-email">Your Email Address</label>
+                        <input type="email" name="email" id="donate-email" class="form__input" required>
+                        <label for="donate-Phone">Your Phone Number</label>
+                        <input type="tel" name="Phone" id="donate-Phone" class="form__input" required>  
+                        <label for="donate-message">Please write a description of what you want to donate and we will contact you as soon as possible...</label>
+                        <textarea name="message" id="donate-message" placeholder="Start writing here..."></textarea>
                     <div class="button-container">
-                        <a href="" class="button" alt="link to booking confirmation page">Send Form</a>
+                        <a href="" class="button" aria-label="link to booking confirmation page">Send Form</a>
                     </div>
                 </div>
                 <div class="volunteer-form">
                     <div class="volunteer sub-header">
                         <legend><h2>Want to Volunteer?</h2></legend>
                     </div>
-                        <label for="name"><p>Your Full Name</p></label>
-                        <input type="text" name="name" class="form__input">
-                        <label for="email"><p>Your Email Address</p></label>
-                        <input type="email" name="email" class="form__input" required>
-                        <label for="Phone"><p>Your Phone Number</p></label>
-                        <input type="tel" name="Phone" class="form__input" required>  
-                        <label for="message"><p>Please write a decsription of yourself and we will contact you as soon as we can… (include your age and interests)</p></label>
-                        <textarea name="message" placeholder="Start writing here..."></textarea>
+                        <label for="volunteer-name">Your Full Name</label>
+                        <input type="text" name="name" id="volunteer-name" class="form__input">
+                        <label for="volunteer-email">Your Email Address</label>
+                        <input type="email" name="email" id="volunteer-email" class="form__input" required>
+                        <label for="volunteer-Phone">Your Phone Number</label>
+                        <input type="tel" name="Phone" id="volunteer-Phone" class="form__input" required>  
+                        <label for="volunteer-message">Please write a decsription of yourself and we will contact you as soon as we can… (include your age and interests)</label>
+                        <textarea name="message" id="volunteer-message" placeholder="Start writing here..."></textarea>
                     <div class="button-container">
-                        <a href="" class="button" alt="link to booking confirmation page">Send Form</a>
+                        <a href="" class="button" aria-label="link to booking confirmation page">Send Form</a>
                     </div>
                 </div>
                 <div class="internship-form">
                     <div class="internship sub-header">
                         <legend><h2>Want an internship?</h2></legend>
                     </div>
-                        <label for="name"><p>Your Full Name</p></label>
-                        <input type="text" name="name" class="form__input" required>
-                        <label for="email"><p>Your Email Address</p></label>
-                        <input type="email" name="email" class="form__input" required>
-                        <label for="Phone"><p>Your Phone Number</p></label>
-                        <input type="tel" name="Phone" class="form__input" required>  
-                        <label for="message"><p>Please write a decsription of yourself and we will contact you as soon as we can… (include your age and interests)</p></label>
-                        <textarea name="message" placeholder="Start writing here..."></textarea>
-                        <label for="cv"><p>Please attatch your CV and Cover letter</p></label>
+                        <label for="intern-name">Your Full Name</label>
+                        <input type="text" name="name" id="intern-name" class="form__input" required>
+                        <label for="intern-email">Your Email Address</label>
+                        <input type="email" name="email" id="intern-email" class="form__input" required>
+                        <label for="intern-Phone">Your Phone Number</label>
+                        <input type="tel" name="Phone" id="intern-Phone" class="form__input" required>  
+                        <label for="intern-message">Please write a decsription of yourself and we will contact you as soon as we can… (include your age and interests)</label>
+                        <textarea name="message" id="intern-message" placeholder="Start writing here..."></textarea>
+                        <label for="cv">Please attatch your CV and Cover letter</label>
                         <input type="file" id="cv" name="cv">
                     <div class="button-container">
-                        <a href="" class="button" alt="link to booking confirmation page">Send Form</a>
+                        <a href="" class="button" aria-label="link to booking confirmation page">Send Form</a>
                     </div>
                 </div>
-            </section>
-            <section class="main-section">
+            </div>
+            <div class="main-section">
                     <div class="other sub-header">
                         <legend><h2>Something else?</h2></legend>
                     </div>
@@ -120,7 +121,7 @@
                             <a href="visit-us.html#location-section" class="hyperlink"><p class="hyperlink-styling">(See map on the Visit Us Page)</p></a>
                     </div>
                 </form>
-            </section>
+            </div>
         </main>
         <footer>
             <div class="footer-flex-container">

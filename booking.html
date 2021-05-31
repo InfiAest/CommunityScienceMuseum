@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <title>Community Science Museum Booking Page</title>
         <meta name="description" content="Book an event at the Community Science Museum.">
@@ -12,13 +12,14 @@
     <body>
         <header>
             <div class="nav-flex-container">
-                <label class="hamburger-label" for="hamburger-menu"><i class="fas fa-bars"></i></label>
+                <label class="hamburger-label" for="hamburger-menu"><i class="fas fa-bars" aria-label="hamburger menu"></i></label>
                 <input type="checkbox" id="hamburger-menu">
-                <label class="search-label" for="search-menu"><i class="fas fa-search"></i></label>
+                <label class="search-label" for="search-menu"><i class="fas fa-search" aria-label="search"></i></label>
                 <input type="checkbox" id="search-menu">
                 <a href="index.html"><img class="logo" src="images/csm-logo-500px.png" alt="Community Science Museum logo which acts as the home button"></a>
                 <nav>
                     <ul>
+                        <li><a href="index.html">Home</a></li>
                         <li><a href="exhibition-spaces.html">Exhibition Spaces</a></li>
                         <li><a href="explore.html">Explore</a></li>
                         <li><a href="events.html">Events & Exhibitions</a></li>
@@ -30,72 +31,75 @@
                 <form class="searchbox" action="action_page.php">
                     <div class="searchbox-flex-container">
                         <input type="text" placeholder="Search.." name="Search">
-                        <button type="submit"><i class="fa fa-search"></i></button>
+                        <button type="submit" aria-label="search button"><i class="fa fa-search" aria-label="search"></i></button>
                     </div>
                 </form>
             </div>    
         </header>
         <main>
-            <section class="main-section">
+            <div class="main-section">
                 <form class=" desktop-search searchbox" action="action_page.php">
                     <div class="searchbox-flex-container">
                         <input type="text" placeholder="Search.." name="Search">
-                        <button type="submit"><i class="fa fa-search"></i></button>
+                        <button type="submit" aria-label="search button"><i class="fa fa-search" aria-label="search"></i></button>
                     </div>
                 </form>
-            </section>
-            <section class="main-section">
+            </div>
+            <div class="main-section">
                 <h1>Booking Form</h1>
-            </section>
-            <section class="main-section">
+            </div>
+            <div class="main-section">
                 <form>
-                    <label for="name"><p>Your Full Name</p></label>
-                    <input type="text" name="name" class="form__input" required>
-                    <label for="email"><p>Your Email Address</p></label>
-                    <input type="email" name="email" class="form__input" required>
-                    <label for="Phone"><p>Your Phone Number</p></label>
-                    <input type="tel" name="Phone" class="form__input" required>                          
-                    <label for="tickets"><p>Select number of tickets you want...</p></label>
-                        <select name="tickets" class="form__input" required>
-                            <option value="1"><p>1</p></option>
-                            <option value="2"><p>2</p></option>
-                            <option value="3"><p>3</p></option>
-                            <option value="4"><p>4</p></option>
-                            <option value="5"><p>5</p></option>
-                            <option value="6"><p>6</p></option>
-                            <option value="7"><p>7</p></option>
-                            <option value="8"><p>8</p></option>
-                            <option value="9"><p>9</p></option>
-                            <option value="10"><p>10</p></option>
-                            <option value="11"><p>11</p></option>
-                            <option value="12"><p>12</p></option>
-                            <option value="schoolclass"><p>School Class</p></option>
+                    <label for="name">Your Full Name</label>
+                    <input type="text" name="name" id="name" class="form__input" required>
+                    <label for="email">Your Email Address</label>
+                    <input type="email" name="email" id="email" class="form__input" required>
+                    <label for="Phone">Your Phone Number</label>
+                    <input type="tel" name="Phone" id="Phone" class="form__input" required>                          
+                    <label for="tickets">Select number of tickets you want...</label>
+                        <select name="tickets" class="form__input" id="tickets" required>
+                            <option value="-">-</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="schoolclass">School Class</option>
                         </select>
-                    <label for="message"><p>Any notes if necessary...</p></label>
-                    <textarea name="message"></textarea>
-                    <label for="event"><p>Select which event you want to book for...</p></label>
-                        <select name="events" class="form__input" required>
-                            <option value="event-1"><p>Visiting Professor of Aeronautics</p></option>
-                            <option value="event-2"><p>Night in the Museum</p></option>
-                            <option value="event-3"><p>Energetica Exhibition on Loan</p></option>
-                            <option value="event-4"><p>Guided tour</p></option>
-                            <option value="event-4"><p>Young Stars Club</p></option>
-                            <option value="event-4"><p>Holiday Club</p></option>
+                    <label for="message">Any notes if necessary...</label>
+                    <textarea name="message" id="message"></textarea>
+                    <label for="event">Select which event you want to book for...</label>
+                        <select name="events" id="event" class="form__input" required>
+                            <option value="-">-</option>
+                            <option value="event-1">Visiting Professor of Aeronautics</option>
+                            <option value="event-2">Night in the Museum</option>
+                            <option value="event-3">Energetica Exhibition on Loan</option>
+                            <option value="event-4">Guided tour</option>
+                            <option value="event-4">Young Stars Club</option>
+                            <option value="event-4">Holiday Club</option>
                         </select>
-                    <label for="day"><p>Select a date:</p></label>
+                    <label for="day">Select a date:</label>
                     <input type="date" id="day" name="day" required>
-                    <label for="time"><p>Select Time</p></label>
-                        <select name="time" class="form__input" required>
-                            <option value="10"><p>10:00</p></option>
-                            <option value="12"><p>12:00</p></option>
-                            <option value="14"><p>14:00</p></option>
-                            <option value="16"><p>16:00</p></option>
+                    <label for="time">Select Time:</label>
+                        <select name="time" id="time" class="form__input" required>
+                            <option value="-">-</option>
+                            <option value="10">10:00</option>
+                            <option value="12">12:00</option>
+                            <option value="14">14:00</option>
+                            <option value="16">16:00</option>
                         </select>
                     <div class="button-container">
-                        <a href="booking-confirmation.html" class="button" alt="link to booking confirmation page">Book Now</a>
+                        <a href="booking-confirmation.html" class="button" aria-label="link to booking confirmation page">Book Now</a>
                     </div>
                 </form>
-            </section>
+            </div>
         </main>
         <footer>
             <div class="footer-flex-container">

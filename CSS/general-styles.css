@@ -50,7 +50,7 @@ body {
 }
 main {
   padding: 0 10px;
-  margin: 0;
+  margin: 0 5%;
 }
 
 /* Navigation Bar
@@ -150,9 +150,14 @@ form.searchbox input[type="text"] {
   width: 80%;
   height: auto;
   background: #ffffff;
+  transition: all 0.3s ease;
 }
 form.searchbox button:hover {
   background: #dbc350;
+}
+form.searchbox input[type="text"]:focus {
+  outline: none;
+  transform: scale(1.04);
 }
 .desktop-search {
   display: none;
@@ -171,7 +176,6 @@ form.searchbox button:hover {
 .image-styling {
   border-radius: 24px;
   width: 100%;
-  max-width: 800px;
   height: auto;
   object-fit: contain;
   display: block;
@@ -187,6 +191,7 @@ form.searchbox button:hover {
   padding: 16px;
   display: block;
   width: fit-content;
+  margin: 0 auto;
 }
 
 /* Quick Link styling
@@ -280,7 +285,17 @@ select {
   border: 2px solid #438f64;
   border-radius: 12px;
   outline: none;
-  margin: 0;
+  margin: 10px 0;
+  transition: all 0.3s ease;
+}
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="date"]:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  transform: scale(1.04);
 }
 textarea {
   width: 95%;
@@ -290,7 +305,8 @@ textarea {
   border-radius: 12px;
   resize: none;
   outline: none;
-  margin: 0;
+  margin: 10px 0;
+  transition: all 0.3s ease;
 }
 
 /* Footer styling
@@ -347,10 +363,10 @@ footer a:hover {
     align-items: center;
   }
   nav a {
-    padding: 20px 15px;
+    padding: 20px 10px;
   }
   .logo {
-    width: 180px;
+    width: 120px;
   }
   .hamburger-label,
   .search-label {
@@ -376,7 +392,7 @@ footer a:hover {
     padding: 20px 25px;
   }
   .logo {
-    width: 220px;
+    width: 150px;
   }
   main {
     margin: 0 12%;

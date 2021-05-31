@@ -1,116 +1,157 @@
 /* CSS GRID
 -------------*/
 body {
-    min-height: 100vh;
-    display: grid;
-    grid-template-areas: 
-    'header'
-    'main'
-    'footer'
-    ;
+  min-height: 100vh;
+  display: grid;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
 }
 main {
-    display: grid;
-    column-gap: 20px;
-    grid-template-areas: 
-    'main-section-one main-section-one'
-    'main-section-two main-section-two'
-    'main-section-three main-section-three'
-    'main-section-four main-section-four'
-    'main-section-five main-section-five'
-    'main-section-six main-section-seven'
-    'main-section-eight main-section-eight'
-    'main-section-nine main-section-nine'
-    'main-section-ten main-section-ten'
-    'main-section-eleven main-section-eleven'
-    'main-section-twelve main-section-twelve'
-    'main-section-thirteen main-section-thirteen'
-    'main-section-fourteen main-section-fourteen'
-    'main-section-fifteen main-section-fifteen'
-    'main-section-sixteen main-section-sixteen'
-    'main-section-seventeen main-section-seventeen'
-    'main-section-eighteen main-section-eighteen'
-    'main-section-ninteen main-section-ninteen'
-    ;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-areas:
+    "main-section-one main-section-one"
+    "main-section-two main-section-two"
+    "main-section-three main-section-three"
+    "main-section-four main-section-four"
+    "main-section-five main-section-five"
+    "main-section-six main-section-seven"
+    "main-section-eight main-section-eight"
+    "main-section-nine main-section-nine"
+    "main-section-ten main-section-ten"
+    "main-section-eleven main-section-eleven"
+    "main-section-twelve main-section-twelve"
+    "main-section-thirteen main-section-thirteen"
+    "main-section-fourteen main-section-fourteen"
+    "main-section-fifteen main-section-fifteen"
+    "main-section-sixteen main-section-sixteen"
+    "main-section-seventeen main-section-seventeen"
+    "main-section-eighteen main-section-eighteen"
+    "main-section-ninteen main-section-ninteen";
 }
-header{grid-area: header;}
-main{grid-area: main;}
-.main-section:nth-child(1){grid-area: main-section-one;}
-.main-section:nth-child(2){grid-area: main-section-two;}
-.main-section:nth-child(3){grid-area: main-section-three;}
-.main-section:nth-child(4){grid-area: main-section-four;}
-.main-section:nth-child(5){grid-area: main-section-five;}
-.main-section:nth-child(6){grid-area: main-section-six;}
-.main-section:nth-child(7){grid-area: main-section-seven;}
-.main-section:nth-child(8){grid-area: main-section-eight;}
-.main-section:nth-child(9){grid-area: main-section-nine;}
-.main-section:nth-child(10){grid-area: main-section-ten;}
-.main-section:nth-child(11){grid-area: main-section-eleven;}
-.main-section:nth-child(12){grid-area: main-section-twelve;}
-.main-section:nth-child(13){grid-area: main-section-thirteen;}
-.main-section:nth-child(14){grid-area: main-section-fourteen;}
-.main-section:nth-child(15){grid-area: main-section-fifteen;}
-.main-section:nth-child(16){grid-area: main-section-sixteen;}
-.main-section:nth-child(17){grid-area: main-section-seventeen;}
-.main-section:nth-child(18){grid-area: main-section-eighteen;}
-.main-section:nth-child(19){grid-area: main-section-ninteen;}
-footer{grid-area: footer;}
-
+header {
+  grid-area: header;
+}
+main {
+  grid-area: main;
+}
+.main-section:nth-child(1) {
+  grid-area: main-section-one;
+}
+.main-section:nth-child(2) {
+  grid-area: main-section-two;
+}
+.main-section:nth-child(3) {
+  grid-area: main-section-three;
+}
+.main-section:nth-child(4) {
+  grid-area: main-section-four;
+}
+.main-section:nth-child(5) {
+  grid-area: main-section-five;
+}
+.main-section:nth-child(6) {
+  grid-area: main-section-six;
+}
+.main-section:nth-child(7) {
+  grid-area: main-section-seven;
+}
+.main-section:nth-child(8) {
+  grid-area: main-section-eight;
+}
+.main-section:nth-child(9) {
+  grid-area: main-section-nine;
+}
+.main-section:nth-child(10) {
+  grid-area: main-section-ten;
+}
+.main-section:nth-child(11) {
+  grid-area: main-section-eleven;
+}
+.main-section:nth-child(12) {
+  grid-area: main-section-twelve;
+}
+.main-section:nth-child(13) {
+  grid-area: main-section-thirteen;
+}
+.main-section:nth-child(14) {
+  grid-area: main-section-fourteen;
+}
+.main-section:nth-child(15) {
+  grid-area: main-section-fifteen;
+}
+.main-section:nth-child(16) {
+  grid-area: main-section-sixteen;
+}
+.main-section:nth-child(17) {
+  grid-area: main-section-seventeen;
+}
+.main-section:nth-child(18) {
+  grid-area: main-section-eighteen;
+}
+.main-section:nth-child(19) {
+  grid-area: main-section-ninteen;
+}
+footer {
+  grid-area: footer;
+}
 
 /* Sub-header styling
 -------------*/
 .professor {
-    max-width: 590px;
+  max-width: 590px;
 }
 .night {
-    max-width: 360px;
+  max-width: 360px;
 }
 .energetica {
-    max-width: 520px;
+  max-width: 520px;
 }
 
 /* Image Container styling
 -------------*/
 .img-container-1 {
-    background-color: #D98580;
+  background-color: #d98580;
 }
-.img-container-2, .img-container-4 {
-    background-color: #438F64;
+.img-container-2,
+.img-container-4 {
+  background-color: #438f64;
 }
-.img-container-3, .img-container-5 {
-    background-color: #DBC350;
+.img-container-3,
+.img-container-5 {
+  background-color: #dbc350;
 }
-.img-container-1, .img-container-2, .img-container-3 {
-    margin-top: 20px;
-}
-.img-container-4, .img-container-5 {
-    padding: 8px;
+
+.img-container-4,
+.img-container-5 {
+  padding: 8px;
 }
 
 /* Media Queries
 -------------*/
 
 /*  SMALL Desktop screen sizes-------------*/
-@media(min-width: 938px){ 
-    main {
-        display: grid;
-        column-gap: 40px;
-        grid-template-areas: 
-        'main-section-two main-section-two main-section-one'
-        'main-section-three main-section-three main-section-four'
-        'main-section-five main-section-five main-section-four'
-        'main-section-six main-section-seven main-section-four'
-        'main-section-eight main-section-eight main-section-eight'
-        'main-section-nine main-section-nine main-section-ten'
-        'main-section-nine main-section-nine main-section-eleven'
-        'main-section-twelve main-section-twelve main-section-twelve'
-        'main-section-thirteen main-section-thirteen main-section-fourteen'
-        'main-section-thirteen main-section-thirteen main-section-fifteen'
-        'main-section-sixteen main-section-sixteen main-section-sixteen'
-        'main-section-seventeen main-section-seventeen main-section-eighteen'
-        'main-section-seventeen main-section-seventeen main-section-ninteen'
-        ;
-    }
+@media (min-width: 938px) {
+  main {
+    display: grid;
+    grid-gap: 40px;
+    grid-template-areas:
+      "main-section-two main-section-two main-section-one"
+      "main-section-three main-section-three main-section-four"
+      "main-section-five main-section-five main-section-four"
+      "main-section-six main-section-seven main-section-four"
+      "main-section-eight main-section-eight main-section-eight"
+      "main-section-nine main-section-nine main-section-ten"
+      "main-section-nine main-section-nine main-section-eleven"
+      "main-section-twelve main-section-twelve main-section-twelve"
+      "main-section-thirteen main-section-thirteen main-section-fourteen"
+      "main-section-thirteen main-section-thirteen main-section-fifteen"
+      "main-section-sixteen main-section-sixteen main-section-sixteen"
+      "main-section-seventeen main-section-seventeen main-section-eighteen"
+      "main-section-seventeen main-section-seventeen main-section-ninteen";
+  }
 }
 /* 
 -------------*/
