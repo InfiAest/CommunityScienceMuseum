@@ -1,3 +1,14 @@
+/*Colour key -----------*/
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --pink: #ee4c9c;
+  --purple: #441f50;
+  --green: #1f8f75;
+  --blue: #0293d6;
+  --orange: #f9a61d;
+}
+
 /* CSS GRID
 -------------*/
 body {
@@ -81,17 +92,20 @@ label {
   display: block;
   font-family: sys-tt, sans-serif;
   font-size: 1.2em;
-  color: #000000;
+  color: var(--black);
+  font-weight: bolder;
 }
 input {
   font-family: sys-tt, sans-serif;
   font-size: 1.2em;
-  color: #000000;
+  color: var(--black);
+  font-weight: bolder;
 }
 textarea {
   font-family: sys-tt, sans-serif;
   font-size: 1.2em;
-  color: #000000;
+  color: var(--black);
+  font-weight: bolder;
 }
 
 /* Icon styling
@@ -101,7 +115,7 @@ textarea {
   float: left;
   font-size: 1.5em;
   margin: 2px 5px 0 5px;
-  color: #8f413c;
+  color: var(--pink);
 }
 
 /* Hyperlink styling
@@ -110,7 +124,7 @@ textarea {
   text-decoration: none;
 }
 .hyperlink-styling {
-  color: #8f413c;
+  color: var(--pink);
 }
 .hyperlink-styling:hover {
   text-decoration: underline;

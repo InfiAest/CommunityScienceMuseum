@@ -1,3 +1,14 @@
+/*Colour key -----------*/
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --pink: #ee4c9c;
+  --purple: #441f50;
+  --green: #1f8f75;
+  --blue: #0293d6;
+  --orange: #f9a61d;
+}
+
 /* CSS GRID
 -------------*/
 body {
@@ -39,12 +50,12 @@ footer {
 label {
   font-family: sys-tt, sans-serif;
   font-size: 1.2em;
-  color: #000000;
+  color: var(--black);
 }
 input {
   font-family: sys-tt, sans-serif;
   font-size: 1.2em;
-  color: #000000;
+  color: var(--black);
 }
 
 /* Media Queries

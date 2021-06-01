@@ -1,3 +1,14 @@
+/*Colour key -----------*/
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --pink: #ee4c9c;
+  --purple: #441f50;
+  --green: #1f8f75;
+  --blue: #0293d6;
+  --orange: #f9a61d;
+}
+
 /* CSS GRID
 -------------*/
 body {
@@ -126,13 +137,13 @@ footer {
 /* Image container styling
 -------------*/
 .img-container-1 {
-  background-color: #438f64;
+  background-color: var(--green);
 }
 .img-container-2 {
-  background-color: #d98580;
+  background-color: var(--pink);
 }
 .img-container-3 {
-  background-color: #dbc350;
+  background-color: var(--blue);
 }
 .get-involved-imgs {
   display: none;
@@ -173,24 +184,23 @@ footer {
   main {
     display: grid;
     grid-gap: 40px;
-    grid-template-columns: 2fr 1fr;
     grid-template-areas:
-      "main-section-two main-section-one"
-      "main-section-three main-section-four"
-      "main-section-five main-section-four"
-      "main-section-six main-section-seven"
-      "main-section-eight main-section-eight"
-      "main-section-nine main-section-eleven"
-      "main-section-ten main-section-eleven"
-      "main-section-twelve main-section-twelve"
-      "main-section-thirteen main-section-thirteen"
-      "main-section-fourteen main-section-sixteen"
-      "main-section-fifteen main-section-sixteen"
-      "main-section-seventeen main-section-seventeen"
-      "main-section-eighteen zero"
-      "main-section-twenty main-section-twentyone"
-      "main-section-ninteen main-section-twentyone"
-      "main-section-twentytwo main-section-twentytwo";
+      "main-section-two main-section-two main-section-one"
+      "main-section-three main-section-three main-section-four"
+      "main-section-five main-section-five main-section-four"
+      "main-section-six main-section-seven none"
+      "main-section-eight main-section-eight main-section-eight"
+      "main-section-nine main-section-nine main-section-eleven"
+      "main-section-ten main-section-ten main-section-eleven"
+      "main-section-twelve main-section-twelve main-section-twelve"
+      "main-section-thirteen main-section-thirteen main-section-thirteen"
+      "main-section-fourteen main-section-fourteen main-section-sixteen"
+      "main-section-fifteen main-section-fifteen main-section-sixteen"
+      "main-section-seventeen main-section-seventeen main-section-seventeen"
+      "main-section-eighteen main-section-eighteen zero"
+      "main-section-twenty main-section-twenty main-section-twentyone"
+      "main-section-ninteen main-section-ninteen main-section-twentyone"
+      "main-section-twentytwo main-section-twentytwo main-section-twentytwo";
   }
   .get-involved-imgs {
     display: block;

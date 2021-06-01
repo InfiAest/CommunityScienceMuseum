@@ -1,3 +1,14 @@
+/*Colour key -----------*/
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --pink: #ee4c9c;
+  --purple: #441f50;
+  --green: #1f8f75;
+  --blue: #0293d6;
+  --orange: #f9a61d;
+}
+
 /* CSS GRID
 -------------*/
 body {
@@ -67,15 +78,15 @@ footer {
 -------------*/
 .img-container-1,
 .img-container-4 {
-  background-color: #438f64;
+  background-color: var(--green);
   max-height: 100%;
 }
 .img-container-2 {
-  background-color: #d98580;
+  background-color: var(--pink);
   max-height: 100%;
 }
 .img-container-3 {
-  background-color: #dbc350;
+  background-color: var(--blue);
   max-height: 100%;
 }
 
